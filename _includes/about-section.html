@@ -1,0 +1,14 @@
+<section class="main-section" id="about-section">
+	
+		<header class="section-header">
+			<h2> About </h2>
+		</header>		
+		<div class="about-lexi container">
+
+			{% capture about_lexi %}
+			  {% include about_lexi.md %}
+			{% endcapture %}
+			{{ about_lexi | unindent | markdownify }}
+
+		</div> 
+</section>
