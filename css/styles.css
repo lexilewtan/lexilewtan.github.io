@@ -1,49 +1,92 @@
 @import url(http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700|Arapey:400italic,400);
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-/* Global Reset */
-* {
-  margin: 0;
+@import "ionicons.css";
+/* -- FLUID GRID STYLES -- */
+.grid {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.grid.third li {
+  display: inline-block;
+  width: 31%;
+  margin-bottom: 2%;
+}
+.grid li {
+  display: inline-block;
+}
+.grid li.half {
+  width: 45%;
+}
+.grid:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.grid .placeholder {
   padding: 0;
 }
-html,
-body {
-  height: 100%;
+.placeholder {
+  width: 1em;
+  display: inline-block;
 }
 body {
-  background-color: #FFF;
-  font-size: 1.5em;
-  line-height: 1.75;
+  font: 1em "times";
+  font-weight: normal;
+  line-height: 1.5;
 }
-p {
-  margin: 1em 0;
-}
-a {
-  color: #00a;
-}
-a:hover {
-  color: #000;
-}
-a:visited {
-  color: #a0a;
-}
-* {
-  margin: 0;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  background: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.25;
+  margin-bottom: .1em;
 }
 h1 {
   font-family: "helvetica";
   text-transform: uppercase;
   font-weight: 700;
+}
+h2 {
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.5em;
+  font-family: "times";
+  font-style: italic;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-style: italic;
+}
+.header h1 {
+  line-height: 1;
+}
+hr {
+  clear: both;
+}
+p {
+  font-size: 100%;
+  line-height: 1.75;
+  margin-bottom: .75em;
+}
+a {
+  font-weight: normal;
+}
+a:link,
+a:visited,
+a:active {
+  color: #b21455;
+}
+a:hover {
+  color: #ea4287;
+}
+h1 {
   margin-bottom: .25em;
   text-align: center;
   margin-top: 2em;
@@ -105,4 +148,15 @@ section h2 {
 }
 #mission-section {
   background: url("../img/pattern.png");
+}
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  body {
+    font-size: 12pt;
+  }
 }
