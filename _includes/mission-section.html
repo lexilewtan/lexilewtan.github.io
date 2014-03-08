@@ -3,11 +3,11 @@
 		<h2> Mission </h2>
 	</header>
 	
-	<div class="photo"></div><div class="photo"></div>
-	
+	<div class="container">
 	{% capture about_the_mission %}
 	  {% include about_the_mission.md %}
 	{% endcapture %}
 	{{ about_the_mission | unindent | markdownify }}
+	</div>
 
 </section>
