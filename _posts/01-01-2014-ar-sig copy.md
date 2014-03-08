@@ -1,0 +1,18 @@
+---
+layout: post
+title: arapey and signika
+css: arapeysignika.css 
+---
+
+#Lexi Lewtan
+###techno-romantic
+
+#####About
+
+*I am an optimistic, easily intrigued connector of people, companies, and ideas.* I love a good pair of headphones, intense discussion and anything with avocado on it.
+
+I currently work at Hired, the first truly transparent, candidate-centric recruiting marketplace. My job is to make sure New York City has enough great talent and great companies connecting on the platform every day. 
+
+Before Hired I worked at betaworks, where I created my role as Evangelist,  a mix of product, community and recruiting across the betaworks network. 
+
+Before betaworks I was a student at the Gallatin School of Individualized Study, a small school within NYU in New York City. I studied technological disruptions (the history, philosophy and impact of technology's rapid progression on business and society) with a minor in Web Development. During college I also learned the startup, editorial, and internet ropes at Techstars, Coursekit, Contently, Savored and Terrible Labs, and NYLON Magazine.
