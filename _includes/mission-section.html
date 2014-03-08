@@ -1,10 +1,13 @@
-<section class="main-section" id="mission">
-	<a name="mission-section"/>
-	<div class="section-header">
-		<h2> MISSION </h2>
-		<div class="logo"><a href="#connect-section"><img src="path/to/lexi/lewtans.logo"></a></div>
-	</div>
+<section class="main-section" id="mission-section">
+	<header class="section-header">
+		<h2> Mission </h2>
+	</header>
 	
 	<div class="photo"></div><div class="photo"></div>
-	<div class="copy" id="about-the-mission"></div>		
+	
+	{% capture about_the_mission %}
+	  {% include about_the_mission.md %}
+	{% endcapture %}
+	{{ about_the_mission | unindent | markdownify }}
+
 </section>

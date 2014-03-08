@@ -1,10 +1,14 @@
-<section class="main-section" id="about">
-	<a name="about-section"/>
-		<div class="section-header">
-			<h2> ABOUT </h2>
-			<div class="logo"><a href="#connect-section"><img src="path/to/lexi/lewtans.logo"></a></div>
-		</div>
-		
-		<div class="photo" id="of-lexi"><img src="path/to/lexi/lewtans.logo"></div>
-		<div class="copy" id="about-lexi"></div>		
+<section class="main-section" id="about-section">
+		<header class="section-header">
+			<h2> About </h2>
+		</header>		
+		<div class="photo-of-lexi"><img src="path/to/lexi/lewtans.img"></div>
+		<div class="about-lexi">
+
+			{% capture about_lexi %}
+			  {% include about_lexi.md %}
+			{% endcapture %}
+			{{ about_lexi | unindent | markdownify }}
+
+		</div> 
 </section>
