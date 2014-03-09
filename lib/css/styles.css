@@ -105,15 +105,11 @@ p {
   font-weight: 300;
   line-height: 2;
 }
-p:first-of-type,
-p:nth-of-type(2) {
-  font-size: 1em;
-}
-p {
-  font-size: .75em;
+p:nth-child(n+3) {
+  margin-left: 4em;
 }
 em {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1;
   font-family: "Baskerville";
 }
@@ -140,7 +136,7 @@ em {
 }
 .bar {
   background-color: white;
-  min-height: 5em;
+  min-height: 3em;
   *zoom: 1;
 }
 .bar:before,
@@ -159,7 +155,7 @@ em {
   display: inline-block;
   float: left;
   width: 20%;
-  font-size: 3.5em;
+  font-size: 1em;
   text-transform: lowercase;
 }
 .jump-button-bar li:hover {
@@ -172,6 +168,13 @@ em {
 .jump-button-bar li:nth-child(1) {
   text-align: left;
 }
+.jump-button-bar li:nth-child(1):hover {
+  background: #b1fcfc;
+  color: white;
+}
+.jump-button-bar li:nth-child(1):hover a {
+  color: white;
+}
 .jump-button-bar li:nth-child(2),
 .jump-button-bar li:nth-child(3),
 .jump-button-bar li:nth-child(4) {
@@ -182,6 +185,7 @@ em {
 }
 .jump-button-bar li a {
   text-decoration: none;
+  color: black;
   padding: 1em;
 }
 .announcements {
@@ -196,6 +200,7 @@ section h2 {
   text-align: right;
 }
 .section-header h2 {
+  font-size: 2.5em;
   text-align: right;
   font-family: 'Signika Negative';
   font-weight: 600;
@@ -212,10 +217,7 @@ section h2 {
   margin: auto;
 }
 #about-section {
-  background: navy;
-}
-#mission-section {
-  background: url("../img/pattern.png");
+  background: #b1fcfc;
 }
 @media print {
   @page {

@@ -1,0 +1,8 @@
+<div class="bar">
+	<div class="announcements">
+{% capture announcements %}
+  {% include announcements.md %}
+{% endcapture %}
+{{ announcements | unindent | markdownify }}
+	</div>
+</div>
