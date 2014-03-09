@@ -58,7 +58,7 @@ h6 {
   margin-bottom: .1em;
 }
 h1 {
-  font-family: "helvetica";
+  font-family: "Signika Negative";
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -101,7 +101,7 @@ a:hover {
   color: #f777b5;
 }
 p {
-  font-family: "helvetica";
+  font-family: "Signika Negative";
   font-weight: 300;
   line-height: 2;
 }
@@ -111,7 +111,7 @@ p:nth-child(n+3) {
 em {
   font-size: 2em;
   line-height: 1;
-  font-family: "helvetica";
+  font-family: "Baskerville";
 }
 .personal-name {
   margin: 0;
@@ -158,6 +158,7 @@ em {
   width: 20%;
   font-size: 1em;
   text-transform: lowercase;
+  text-align: center;
 }
 .jump-button-bar li:hover {
   background: #f21680;
@@ -166,23 +167,12 @@ em {
 .jump-button-bar li:hover a {
   color: white;
 }
-.jump-button-bar li:nth-child(1) {
-  text-align: left;
-}
 .jump-button-bar li:nth-child(1):hover {
   background: #b1fcfc;
   color: white;
 }
 .jump-button-bar li:nth-child(1):hover a {
   color: white;
-}
-.jump-button-bar li:nth-child(2),
-.jump-button-bar li:nth-child(3),
-.jump-button-bar li:nth-child(4) {
-  text-align: center;
-}
-.jump-button-bar li:nth-child(5) {
-  text-align: right;
 }
 .jump-button-bar li a {
   text-decoration: none;
@@ -192,13 +182,28 @@ em {
 .announcements {
   width: 100%;
   background-color: white;
-  border-bottom: 3px solid #208ba1;
+  border-bottom: 3px solid #6a7cb3;
   text-align: center;
   position: fixed;
   color: #ce1599;
 }
 .announcements p {
   margin: 0;
+}
+.announcements a {
+  background: #370051;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  text-transform: uppercase;
+}
+.container-outer {
+  width: 100%;
+  margin: auto;
+}
+.container-inner {
+  width: 50%;
+  margin: auto;
 }
 section {
   min-height: 30em;
@@ -212,25 +217,36 @@ section h2 {
   font-family: "Squada One";
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .25em;
-  color: #208ba1;
-}
-.container-outer {
-  width: 100%;
-  margin: auto;
-}
-.container-inner {
-  width: 50%;
-  margin: auto;
 }
 #about-section {
-  background: #eeeeee;
+  border-top: 3px solid #208ba1;
+}
+#about-section .section-header {
+  color: #208ba1;
 }
 #mission-section {
-  background: #222222;
+  border-top: 3px solid #370051;
+}
+#mission-section .section-header {
+  color: #370051;
 }
 #follow-section {
-  background: #666666;
+  border-top: 3px solid #c23f58;
+}
+#follow-section .section-header {
+  color: #c23f58;
+}
+#work-section {
+  border-top: 3px solid #4e9e86;
+}
+#work-section .section-header {
+  color: #4e9e86;
+}
+#connect-section {
+  border-top: 3px solid #d5ad01;
+}
+#connect-section .section-header {
+  color: #d5ad01;
 }
 @media only screen and (min-width: 70em) {
   .container-outer {
