@@ -160,18 +160,39 @@ em {
   text-transform: lowercase;
   text-align: center;
 }
-.jump-button-bar li:hover {
-  background: #f21680;
-  color: white;
-}
-.jump-button-bar li:hover a {
-  color: white;
-}
 .jump-button-bar li:nth-child(1):hover {
-  background: #b1fcfc;
+  background: #208ba1;
   color: white;
 }
 .jump-button-bar li:nth-child(1):hover a {
+  color: white;
+}
+.jump-button-bar li:nth-child(2):hover {
+  background: #370051;
+  color: white;
+}
+.jump-button-bar li:nth-child(2):hover a {
+  color: white;
+}
+.jump-button-bar li:nth-child(3):hover {
+  background: #c23f58;
+  color: white;
+}
+.jump-button-bar li:nth-child(3):hover a {
+  color: white;
+}
+.jump-button-bar li:nth-child(4):hover {
+  background: #4e9e86;
+  color: white;
+}
+.jump-button-bar li:nth-child(4):hover a {
+  color: white;
+}
+.jump-button-bar li:nth-child(5):hover {
+  background: #d5ad01;
+  color: white;
+}
+.jump-button-bar li:nth-child(5):hover a {
   color: white;
 }
 .jump-button-bar li a {
