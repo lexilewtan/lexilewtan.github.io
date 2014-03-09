@@ -14,9 +14,7 @@ em {
 	line-height: 1;
 	font-family: @serif;
 }
-.page-header {
 
-}
 .personal-name {
 	margin: 0;
 	text-align: center;
@@ -37,14 +35,49 @@ em {
 
 .page-header {
 	background: url("../img/bg.jpg") top center no-repeat;
-	min-height: 30em;
+	min-height: 27em;
 }
 .bar {
 	background-color: white;
-	height: 10em;
+	min-height: 5em;
+	.clearfix
 }
 .bar:first-child {
-	height: 5em;
+	height: 3.4em;
+}
+
+.jump-button-bar {
+	li {
+		display: inline-block; 
+		float: left; 
+		width: 20%;
+		font-size: 3.5em;
+		text-transform: lowercase;
+		&:hover {
+			background: @accent;
+			color: white;
+			a {
+				color: white;
+			}
+		}
+		&:nth-child(1) {
+			text-align: left; 
+		}
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4) { 
+			text-align: center;
+			
+		}
+		&:nth-child(5) { 
+			text-align: right; 
+			
+		}
+		a {
+			text-decoration: none;
+			padding: 1em;
+		}
+	}
 }
 .announcements {
 	background-color: black;
@@ -67,7 +100,9 @@ section {
 	}
 }
 .container-outer {
-	
+	width: 85%;
+	max-width: 77.5em; 
+	margin: auto;
 	
 }
 .container-inner {

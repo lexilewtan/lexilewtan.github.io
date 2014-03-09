@@ -10,6 +10,9 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* -- FLUID GRID STYLES -- */
 .grid {
@@ -92,10 +95,10 @@ a {
 a:link,
 a:visited,
 a:active {
-  color: #b21455;
+  color: #f21680;
 }
 a:hover {
-  color: #ea4287;
+  color: #f777b5;
 }
 p {
   font-family: "helvetica";
@@ -133,14 +136,53 @@ em {
 }
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat;
-  min-height: 30em;
+  min-height: 27em;
 }
 .bar {
   background-color: white;
-  height: 10em;
+  min-height: 5em;
+  *zoom: 1;
+}
+.bar:before,
+.bar:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bar:after {
+  clear: both;
 }
 .bar:first-child {
-  height: 5em;
+  height: 3.4em;
+}
+.jump-button-bar li {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  font-size: 3.5em;
+  text-transform: lowercase;
+}
+.jump-button-bar li:hover {
+  background: #f21680;
+  color: white;
+}
+.jump-button-bar li:hover a {
+  color: white;
+}
+.jump-button-bar li:nth-child(1) {
+  text-align: left;
+}
+.jump-button-bar li:nth-child(2),
+.jump-button-bar li:nth-child(3),
+.jump-button-bar li:nth-child(4) {
+  text-align: center;
+}
+.jump-button-bar li:nth-child(5) {
+  text-align: right;
+}
+.jump-button-bar li a {
+  text-decoration: none;
+  padding: 1em;
 }
 .announcements {
   background-color: black;
@@ -160,7 +202,12 @@ section h2 {
   text-transform: uppercase;
   letter-spacing: .25em;
 }
-.container {
+.container-outer {
+  width: 85%;
+  max-width: 77.5em;
+  margin: auto;
+}
+.container-inner {
   width: 50%;
   margin: auto;
 }
