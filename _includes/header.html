@@ -1,7 +1,15 @@
 <header class="page-header">
-	<h1> Lexi Lewtan</h1>
-	<h3> techno-romantic </h3>
-	<nav>
+	<div class="bar">
+		<div class="announcements">
+{% capture announcements %}
+  {% include announcements.md %}
+{% endcapture %}
+{{ announcements | unindent | markdownify }}
+		</div>
+	</div>
+	<h1 class="personal-name"> Lexi Lewtan</h1>
+	<h3 class="personality"> techno-romantic </h3>
+	<nav class="bar">
 		<ul>
 			<li class="jump-button"> <a href="#about-section">About</a></li>
 			<li class="jump-button"> <a href="#mission-section">Mission</a></li>

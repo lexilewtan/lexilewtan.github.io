@@ -1,4 +1,3 @@
-
 if you are looking to hire technical talent, apply to Hired's Employer Program [here](http://join.hired.com/x/xf0SUe) for weekly access to freshly screened and vetted engineers. 
 
 if you are looking to hire non technical talent, freelancers or interns, subscribe to my newsletter [here](https://tinyletter.com/lexilewtan).

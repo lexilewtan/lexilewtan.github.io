@@ -1,4 +1,3 @@
-
 *I am an optimistic, easily intrigued connector of people, companies, and ideas.* I love a good pair of headphones, intense discussion and anything with avocado on it.
 
 I currently work at Hired, the first truly transparent, candidate-centric recruiting marketplace. My job is to make sure New York City has enough great talent and great companies connecting on the platform every day.

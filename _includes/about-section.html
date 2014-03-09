@@ -5,10 +5,10 @@
 		</header>		
 		<div class="about-lexi container">
 
-			{% capture about_lexi %}
-			  {% include about_lexi.md %}
-			{% endcapture %}
-			{{ about_lexi | unindent | markdownify }}
+{% capture about_lexi %}
+  {% include about_lexi.md %}
+{% endcapture %}
+{{ about_lexi | unindent | markdownify }}
 
 		</div> 
 </section>
