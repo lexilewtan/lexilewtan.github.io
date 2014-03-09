@@ -9,7 +9,7 @@ p {
 em {
 	font-size: 2em;
 	line-height: 1;
-	font-family: @serif;
+	font-family: @sans;
 }
 
 .personal-name {
@@ -45,6 +45,7 @@ em {
 
 .jump-button-bar {
 	li {
+		padding: 2em 0 0;
 		display: inline-block; 
 		float: left; 
 		width: 20%;
@@ -85,9 +86,15 @@ em {
 	}
 }
 .announcements {
-	background-color: black;
+	width: 100%;
+	background-color: white;
+	border-bottom: 3px solid @teal;
 	text-align: center;
-	color: #CE1599;
+	position: fixed;
+	color: @magenta;
+	p {
+		margin: 0;
+	}
 }
 section {
 	min-height: 30em;
@@ -99,15 +106,15 @@ section {
 	h2 {
 		font-size: 2.5em;
 		text-align: right;
-		font-family: 'Signika Negative';
+		font-family: @name;
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: .25em;
+		color: @teal;
 	}
 }
 .container-outer {
-	width: 85%;
-	max-width: 77.5em; 
+	width: 100%;
 	margin: auto;
 	
 }
@@ -116,7 +123,12 @@ section {
 	margin: auto;
 }
 #about-section {
-	background: @lightBlue;
+//	background: lighten(@lightBlue, 10%);
+	background: @grayLightest;
 }
 #mission-section {
+	background: @grayDark;
+}
+#follow-section {
+	background: @grayMed;
 }
