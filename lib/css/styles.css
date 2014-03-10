@@ -178,13 +178,13 @@ em {
   color: white;
 }
 .jump-button-bar li:nth-child(4):hover {
-  background: #4e9e86;
+  background: #f21680;
 }
 .jump-button-bar li:nth-child(4):hover a {
   color: white;
 }
 .jump-button-bar li:nth-child(5):hover {
-  background: #d5ad01;
+  background: #09aee6;
 }
 .jump-button-bar li:nth-child(5):hover a {
   color: white;
@@ -252,16 +252,16 @@ section h2 {
   color: #c23f58;
 }
 #work-section {
-  border-top: 3px solid #4e9e86;
+  border-top: 3px solid #f21680;
 }
 #work-section .section-header {
-  color: #4e9e86;
+  color: #f21680;
 }
 #connect-section {
-  border-top: 3px solid #d5ad01;
+  border-top: 3px solid #09aee6;
 }
 #connect-section .section-header {
-  color: #d5ad01;
+  color: #09aee6;
 }
 @media only screen and (min-width: 70em) {
   .container-outer {
