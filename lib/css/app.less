@@ -1,3 +1,7 @@
+body {
+	background-color: @mainBackground;
+}
+
 p {
 	font-family: @sans;
 	font-weight: 300;
@@ -28,6 +32,7 @@ em {
 	margin: 0;
 	margin-top: -.5em;
 	color: white;
+	font-weight: 600;
 }
 
 .page-header {
@@ -35,15 +40,15 @@ em {
 	min-height: 20em;
 }
 .bar {
-	background-color: white;
+	background-color: @mainBackground;
 	min-height: 1em;
 	.clearfix
 }
 .bar:first-child {
-	height: 1em;
 }
 
 .jump-button-bar {
+	background-color: white; 
 	li {
 		display: inline-block; 
 		float: left; 
@@ -52,6 +57,11 @@ em {
 		text-transform: lowercase;
 		text-align: center;
 		&:nth-child(1) {
+		    -webkit-transition: background-color .75s ease-in-out;
+		    -moz-transition: background-color .75s ease-in-out;
+		    -ms-transition: background-color .75s ease-in-out;
+		    -o-transition: background-color .75s ease-in-out;
+		    transition: background-color .75s ease-in-out;
 			&:hover {
 				background: @about-color;
 				a {
@@ -60,6 +70,11 @@ em {
 			}
 		}
 		&:nth-child(2) {
+		    -webkit-transition: background-color .75s ease-in-out;
+		    -moz-transition: background-color .75s ease-in-out;
+		    -ms-transition: background-color .75s ease-in-out;
+		    -o-transition: background-color .75s ease-in-out;
+		    transition: background-color .75s ease-in-out;
 			&:hover {
 				background: @mission-color;
 				a {
@@ -68,6 +83,11 @@ em {
 			}
 		}
 		&:nth-child(3) {
+		    -webkit-transition: background-color .75s ease-in-out;
+		    -moz-transition: background-color .75s ease-in-out;
+		    -ms-transition: background-color .75s ease-in-out;
+		    -o-transition: background-color .75s ease-in-out;
+		    transition: background-color .75s ease-in-out;
 			&:hover {
 				background: @follow-color;
 				a {
@@ -76,6 +96,11 @@ em {
 			}
 		}
 		&:nth-child(4) {
+		    -webkit-transition: background-color .75s ease-in-out;
+		    -moz-transition: background-color .75s ease-in-out;
+		    -ms-transition: background-color .75s ease-in-out;
+		    -o-transition: background-color .75s ease-in-out;
+		    transition: background-color .75s ease-in-out;
 			&:hover {
 				background: @work-color;
 				a {
@@ -84,6 +109,11 @@ em {
 			}
 		}
 		&:nth-child(5) {
+		    -webkit-transition: background-color .75s ease-in-out;
+		    -moz-transition: background-color .75s ease-in-out;
+		    -ms-transition: background-color .75s ease-in-out;
+		    -o-transition: background-color .75s ease-in-out;
+		    transition: background-color .75s ease-in-out;
 			&:hover {
 				background: @connect-color;
 				a {
@@ -98,13 +128,14 @@ em {
 		}
 	}
 }
+
 .announcements {
 	width: 100%;
-	background-color: white;
+	background-color: @mainBackground;
 	border-bottom: 3px solid @slate;
 	text-align: center;
 	position: fixed;
-	color: @magenta;
+	color: white;
 	p {
 		margin: 0;
 	}
@@ -143,15 +174,22 @@ section {
 		//letter-spacing: .25em;
 	}
 }
+
 #about-section {
 	border-top: 3px solid @about-color;
 	.section-header {
+		color: @about-color;
+	}
+	a:link, a:visited, a:active {
 		color: @about-color;
 	}
 }
 #mission-section {
 	border-top: 3px solid @mission-color;
 	.section-header {
+		color: @mission-color;
+	}
+	a:link, a:visited, a:active {
 		color: @mission-color;
 	}
 }
@@ -161,6 +199,9 @@ section {
 	.section-header {
 		color: @follow-color;
 	}
+	a:link, a:visited, a:active {
+		color: @follow-color;
+	}
 }
 
 #work-section {
@@ -168,11 +209,17 @@ section {
 	.section-header {
 		color: @work-color;
 	}
+	a:link, a:visited, a:active {
+		color: @work-color;
+	}
 }
 
 #connect-section {
 	border-top: 3px solid @connect-color;
 	.section-header {
+		color: @connect-color;
+	}
+	a:link, a:visited, a:active {
 		color: @connect-color;
 	}
 }

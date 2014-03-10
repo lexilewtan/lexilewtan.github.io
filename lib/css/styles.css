@@ -59,7 +59,7 @@ h6 {
 }
 h1 {
   font-family: "Signika Negative";
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 700;
 }
 h2 {
@@ -85,6 +85,7 @@ hr {
   clear: both;
 }
 p {
+  color: white;
   font-size: 100%;
   line-height: 1.75;
   margin-bottom: .75em;
@@ -99,6 +100,9 @@ a:active {
 }
 a:hover {
   color: #f777b5;
+}
+body {
+  background-color: #a9a9a9;
 }
 p {
   font-family: "Signika Negative";
@@ -129,13 +133,14 @@ em {
   margin: 0;
   margin-top: -0.5em;
   color: white;
+  font-weight: 600;
 }
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat;
   min-height: 20em;
 }
 .bar {
-  background-color: white;
+  background-color: #a9a9a9;
   min-height: 1em;
   *zoom: 1;
 }
@@ -148,8 +153,8 @@ em {
 .bar:after {
   clear: both;
 }
-.bar:first-child {
-  height: 1em;
+.jump-button-bar {
+  background-color: white;
 }
 .jump-button-bar li {
   display: inline-block;
@@ -159,11 +164,25 @@ em {
   text-transform: lowercase;
   text-align: center;
 }
+.jump-button-bar li:nth-child(1) {
+  -webkit-transition: background-color 0.75s ease-in-out;
+  -moz-transition: background-color 0.75s ease-in-out;
+  -ms-transition: background-color 0.75s ease-in-out;
+  -o-transition: background-color 0.75s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
+}
 .jump-button-bar li:nth-child(1):hover {
   background: #208ba1;
 }
 .jump-button-bar li:nth-child(1):hover a {
   color: white;
+}
+.jump-button-bar li:nth-child(2) {
+  -webkit-transition: background-color 0.75s ease-in-out;
+  -moz-transition: background-color 0.75s ease-in-out;
+  -ms-transition: background-color 0.75s ease-in-out;
+  -o-transition: background-color 0.75s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
 }
 .jump-button-bar li:nth-child(2):hover {
   background: #370051;
@@ -171,17 +190,38 @@ em {
 .jump-button-bar li:nth-child(2):hover a {
   color: white;
 }
+.jump-button-bar li:nth-child(3) {
+  -webkit-transition: background-color 0.75s ease-in-out;
+  -moz-transition: background-color 0.75s ease-in-out;
+  -ms-transition: background-color 0.75s ease-in-out;
+  -o-transition: background-color 0.75s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
+}
 .jump-button-bar li:nth-child(3):hover {
   background: #c23f58;
 }
 .jump-button-bar li:nth-child(3):hover a {
   color: white;
 }
+.jump-button-bar li:nth-child(4) {
+  -webkit-transition: background-color 0.75s ease-in-out;
+  -moz-transition: background-color 0.75s ease-in-out;
+  -ms-transition: background-color 0.75s ease-in-out;
+  -o-transition: background-color 0.75s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
+}
 .jump-button-bar li:nth-child(4):hover {
   background: #f21680;
 }
 .jump-button-bar li:nth-child(4):hover a {
   color: white;
+}
+.jump-button-bar li:nth-child(5) {
+  -webkit-transition: background-color 0.75s ease-in-out;
+  -moz-transition: background-color 0.75s ease-in-out;
+  -ms-transition: background-color 0.75s ease-in-out;
+  -o-transition: background-color 0.75s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
 }
 .jump-button-bar li:nth-child(5):hover {
   background: #09aee6;
@@ -196,11 +236,11 @@ em {
 }
 .announcements {
   width: 100%;
-  background-color: white;
+  background-color: #a9a9a9;
   border-bottom: 3px solid #6a7cb3;
   text-align: center;
   position: fixed;
-  color: #ce1599;
+  color: white;
 }
 .announcements p {
   margin: 0;
@@ -239,10 +279,20 @@ section h2 {
 #about-section .section-header {
   color: #208ba1;
 }
+#about-section a:link,
+#about-section a:visited,
+#about-section a:active {
+  color: #208ba1;
+}
 #mission-section {
   border-top: 3px solid #370051;
 }
 #mission-section .section-header {
+  color: #370051;
+}
+#mission-section a:link,
+#mission-section a:visited,
+#mission-section a:active {
   color: #370051;
 }
 #follow-section {
@@ -251,16 +301,31 @@ section h2 {
 #follow-section .section-header {
   color: #c23f58;
 }
+#follow-section a:link,
+#follow-section a:visited,
+#follow-section a:active {
+  color: #c23f58;
+}
 #work-section {
   border-top: 3px solid #f21680;
 }
 #work-section .section-header {
   color: #f21680;
 }
+#work-section a:link,
+#work-section a:visited,
+#work-section a:active {
+  color: #f21680;
+}
 #connect-section {
   border-top: 3px solid #09aee6;
 }
 #connect-section .section-header {
+  color: #09aee6;
+}
+#connect-section a:link,
+#connect-section a:visited,
+#connect-section a:active {
   color: #09aee6;
 }
 @media only screen and (min-width: 70em) {
