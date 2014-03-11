@@ -59,8 +59,8 @@ h6 {
 }
 h1 {
   font-family: "Signika Negative";
-  text-transform: lowercase;
-  font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 h2 {
   font-size: 1.75em;
@@ -102,7 +102,7 @@ a:hover {
   color: #f777b5;
 }
 body {
-  background-color: #a9a9a9;
+  background-color: #222222;
 }
 p {
   font-family: "Signika Negative";
@@ -133,14 +133,14 @@ em {
   margin: 0;
   margin-top: -0.5em;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat;
   min-height: 20em;
 }
 .bar {
-  background-color: #a9a9a9;
+  background-color: #222222;
   min-height: 1em;
   *zoom: 1;
 }
@@ -236,7 +236,7 @@ em {
 }
 .announcements {
   width: 100%;
-  background-color: #a9a9a9;
+  background-color: #222222;
   border-bottom: 3px solid #6a7cb3;
   text-align: center;
   position: fixed;
