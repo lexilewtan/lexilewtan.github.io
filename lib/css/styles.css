@@ -269,7 +269,7 @@ em {
   margin: auto;
 }
 section {
-  min-height: 30em;
+  margin-bottom: 3em;
 }
 section h2 {
   text-align: right;
@@ -317,8 +317,8 @@ section h2 {
 }
 .tiny-letter {
   float: left;
-  margin-right: 50px;
-  margin-left: 10px;
+  margin-right: 2em;
+  margin-left: 6em;
 }
 .tiny-letter-name {
   font-family: futura;
@@ -339,6 +339,9 @@ section h2 {
 #work-section a:visited,
 #work-section a:active {
   color: #f21680;
+}
+#work-section .container-inner {
+  margin-top: 2em;
 }
 #connect-section {
   border-top: 3px solid #09aee6;
@@ -370,6 +373,26 @@ section h2 {
     font-size: 1.75em;
     font-weight: 400;
   }
+  .page-header {
+    min-height: 6em;
+  }
+  .jump-button-bar li {
+    width: 19%;
+  }
+  p {
+    font-size: 45%;
+  }
+  .section-header h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .container-inner {
+    width: 75%;
+    margin: auto;
+  }
+  em {
+    font-weight: 200;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   .personal-name {
@@ -377,6 +400,28 @@ section h2 {
   }
   .personality {
     font-size: 1.75em;
+    font-weight: 400;
+  }
+  .page-header {
+    min-height: 6em;
+  }
+  .jump-button-bar li {
+    width: 19%;
+  }
+  em {
+    font-weight: 200;
+  }
+  p {
+    font-size: 55%;
+    font-weight: 500;
+  }
+  .container-inner {
+    width: 75%;
+    margin: auto;
+  }
+  .section-header h2 {
+    font-size: 1.5em;
+    font-weight: 600;
   }
 }
 @media print {

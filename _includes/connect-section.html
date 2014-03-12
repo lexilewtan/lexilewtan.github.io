@@ -2,9 +2,13 @@
 	<header class="section-header">
 		<h2> Connect </h2>
 	</header>
+	<div class="contacting-lexi container-inner">
 	
-		<h3>lexilewtan@email.net</h3>
-		<h3>lexilewtan@school.edu</h3>
+{% capture about_contacting_lexi %} 
+  {% include about_contacting_lexi.md %}
+{% endcapture %}
+{{ about_contacting_lexi | unindent | markdownify }}
 		
 		<div class="button" id="apply-others"></div><div class="button" id="apply-dev"></div>
+	</div>
 </section>
