@@ -143,9 +143,6 @@ em {
   color: white;
   font-weight: 500;
 }
-.tiny-letter-name {
-  font-family: futura;
-}
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat;
   min-height: 20em;
@@ -245,9 +242,6 @@ em {
   color: black;
   padding: 1em;
 }
-.tiny-letter {
-  max-width: 30%;
-}
 .announcements {
   width: 100%;
   background-color: #222222;
@@ -319,6 +313,20 @@ section h2 {
 #follow-section a:visited,
 #follow-section a:active {
   color: #c23f58;
+}
+.tiny-letter {
+  float: left;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.tiny-letter-name {
+  font-family: futura;
+}
+.input-tiny-type-email {
+  width: 170px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 20px;
 }
 #work-section {
   border-top: 3px solid #f21680;
