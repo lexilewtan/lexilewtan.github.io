@@ -1,1 +1,0 @@
-For information about the color gray, please visit [Wikipedia](http://en.wikipedia.org/wiki/Grey).

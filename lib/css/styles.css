@@ -356,6 +356,28 @@ section h2 {
     max-width: 77.5em;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .personality {
+    font-weight: 400;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .personal-name {
+    font-size: 3em;
+  }
+  .personality {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .personal-name {
+    font-size: 3em;
+  }
+  .personality {
+    font-size: 1.75em;
+  }
+}
 @media print {
   @page {
     margin: 0.5in;
