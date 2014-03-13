@@ -1,4 +1,5 @@
-<div class="container-break">*I am an optimistic, easily intrigued connector of people, companies, and ideas.*</div> 
+<div class="container-break">
+	<h1>I am an optimistic, easily intrigued connector of people, companies, and ideas.</h1></div> 
 
 I love a good pair of headphones, intense discussion and anything with avocado on it.
 

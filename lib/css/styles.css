@@ -83,6 +83,7 @@ body {
   font: 1em "Baskerville";
   font-weight: normal;
   line-height: 1.5;
+  color: #aaa;
 }
 h1,
 h2,
@@ -95,7 +96,8 @@ h6 {
   margin-bottom: .1em;
 }
 h1 {
-  font-family: "Signika Negative";
+  font-family: "OstrichSansRegular";
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -141,7 +143,7 @@ a:hover {
 }
 body {
   background-color: #222222;
-  color: white;
+  color: #aaa;
 }
 p {
   font-family: "Signika Negative";
@@ -182,7 +184,7 @@ em {
   font-family: "Baskerville";
   font-style: italic;
   text-align: center;
-  color: #208ba1;
+  color: #6a7cb3;
   margin: 0;
   margin-bottom: .75em;
   font-weight: 500;
@@ -190,19 +192,6 @@ em {
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat fixed;
   min-height: 20em;
-}
-.bar {
-  min-height: 1em;
-  *zoom: 1;
-}
-.bar:before,
-.bar:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.bar:after {
-  clear: both;
 }
 .jump-button-bar li {
   display: inline-block;
@@ -217,14 +206,15 @@ em {
   color: #222;
   opacity: .5;
   padding: 1em;
-  -webkit-transition: color 0.75s ease-in-out;
-  -moz-transition: color 0.75s ease-in-out;
-  -ms-transition: color 0.75s ease-in-out;
-  -o-transition: color 0.75s ease-in-out;
-  transition: color 0.75s ease-in-out;
+  -webkit-transition: opacity 0.75s ease-in-out;
+  -moz-transition: opacity 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out;
+  -o-transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
 }
 .jump-button-bar li a:hover {
-  color: red;
+  opacity: 1;
+  border-bottom: 3px solid red;
 }
 .announcements {
   width: 100%;
@@ -233,7 +223,7 @@ em {
   text-align: center;
   position: fixed;
   color: white;
-  font-size: 75%;
+  font-size: 66%;
   z-index: 10;
 }
 .announcements p {
@@ -246,10 +236,20 @@ em {
   padding: 2px;
   text-transform: uppercase;
 }
-section {
+.main-section {
+  border-top: 3px solid #208ba1;
   margin-bottom: 3em;
+  -webkit-transition: opacity 0.75s ease-in-out;
+  -moz-transition: opacity 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out;
+  -o-transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
+  opacity: .25;
 }
-section h2 {
+.main-section:hover {
+  opacity: 1;
+}
+.main-section h2 {
   text-align: right;
 }
 .section-header h2 {
@@ -260,6 +260,9 @@ section h2 {
   font-weight: 600;
   text-transform: uppercase;
   color: #888;
+}
+#mission-section {
+  background: url() center center fixed;
 }
 .tiny-letter {
   float: left;
@@ -283,7 +286,8 @@ section h2 {
   .container-break {
     width: 130%;
     margin: auto;
-    background: green;
+    background-color: #bde515;
+    color: #208ba1;
     margin-left: -33%;
     text-align: center;
     padding: 5em 0;

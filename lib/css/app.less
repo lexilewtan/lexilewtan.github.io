@@ -1,6 +1,6 @@
 body {
 	background-color: @mainBackground;
-	color: white;
+	color: #aaa;
 }
 
 p {
@@ -42,7 +42,7 @@ em {
 	font-family: @serif;
 	font-style: italic;
 	text-align: center;
-	color: @about-color;
+	color: @slate;
 	margin: 0;
 	margin-bottom: .75em;
 	font-weight: 500;
@@ -53,10 +53,6 @@ em {
 .page-header {
 	background: url("../img/bg.jpg") top center no-repeat fixed;
 	min-height: 20em;
-}
-.bar {
-	min-height: 1em;
-	.clearfix
 }
 
 .jump-button-bar {
@@ -73,13 +69,14 @@ em {
 			color: #222;
 			opacity: .5;
 			padding: 1em;
-		    -webkit-transition: color .75s ease-in-out;
-		    -moz-transition: color .75s ease-in-out;
-		    -ms-transition: color .75s ease-in-out;
-		    -o-transition: color .75s ease-in-out;
-		    transition: color .75s ease-in-out;
+		    -webkit-transition: opacity .75s ease-in-out;
+		    -moz-transition: opacity .75s ease-in-out;
+		    -ms-transition: opacity .75s ease-in-out;
+		    -o-transition: opacity .75s ease-in-out;
+		    transition: opacity .75s ease-in-out;
 			&:hover {
-				color: red;
+				opacity: 1;
+				border-bottom: 3px solid red;
 			}
 		}
 	}
@@ -94,7 +91,7 @@ em {
 	text-align: center;
 	position: fixed;
 	color: white;
-	font-size: 75%;
+	font-size: 66%;
 	z-index: 10;
 	p {
 		margin: 0;
@@ -109,8 +106,18 @@ em {
 }
 
 
-section {
+.main-section {
+	border-top: 3px solid @about-color;
 	margin-bottom: 3em;
+    -webkit-transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -ms-transition: opacity .75s ease-in-out;
+    -o-transition: opacity .75s ease-in-out;
+    transition: opacity .75s ease-in-out;
+	opacity: .25;
+	&:hover {
+		opacity: 1;
+	}
 	h2 {
 		text-align: right;
 	}
@@ -126,6 +133,11 @@ section {
 		//letter-spacing: .25em;
 		color: #888;
 	}
+}
+
+
+#mission-section {
+	background: url() center center fixed;
 }
 
 //	#about-section {
