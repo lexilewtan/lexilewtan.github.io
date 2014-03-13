@@ -9,8 +9,29 @@
 }
 @font-face {
   font-family: 'OstrichSansBlack';
-  src: url('../fonts/ostrich-black/ostrichsans-black-webfont.eot');
-  src: url('../fonts/ostrich-black/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich-black/ostrichsans-black-webfont.woff') format('woff'), url('../fonts/ostrich-black/ostrichsans-black-webfont.ttf') format('truetype'), url('../fonts/ostrich-black/ostrichsans-black-webfont.svg#ostrich_sansblack') format('svg');
+  src: url('../fonts/ostrich/ostrichsans-black-webfont.eot');
+  src: url('../fonts/ostrich/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich/ostrichsans-black-webfont.woff') format('woff'), url('../fonts/ostrich/ostrichsans-black-webfont.ttf') format('truetype'), url('../fonts/ostrich/ostrichsans-black-webfont.svg#ostrich_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OstrichSansLight';
+  src: url('../fonts/ostrich/ostrich-sans-light.eot');
+  src: url('../fonts/ostrich/ostrich-sans-light.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich/ostrich-sans-light.woff') format('woff'), url('../fonts/ostrich/ostrich-sans-light.ttf') format('truetype'), url('../fonts/ostrich/ostrich-sans-light.svg#ostrich_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OstrichSansRegular';
+  src: url('../fonts/ostrich/ostrich-sans-regular.eot');
+  src: url('../fonts/ostrich/ostrich-sans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich/ostrich-sans-regular.woff') format('woff'), url('../fonts/ostrich/ostrich-sans-regular.ttf') format('truetype'), url('../fonts/ostrich/ostrich-sans-regular.svg#ostrich_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OstrichSansBold';
+  src: url('../fonts/ostrich/ostrich-sans-bold.eot');
+  src: url('../fonts/ostrich/ostrich-sans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich/ostrich-sans-bold.woff') format('woff'), url('../fonts/ostrich/ostrich-sans-bold.ttf') format('truetype'), url('../fonts/ostrich/ostrich-sans-bold.svg#ostrich_sansblack') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,6 +70,15 @@
   width: 1em;
   display: inline-block;
 }
+.half {
+  width: 50%;
+}
+.one-third {
+  width: 33%;
+}
+.two-thirds {
+  width: 66%;
+}
 body {
   font: 1em "Baskerville";
   font-weight: normal;
@@ -67,7 +97,7 @@ h6 {
 h1 {
   font-family: "Signika Negative";
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
 }
 h2 {
   font-size: 1.75em;
@@ -75,7 +105,7 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
-  font-family: "Baskerville";
+  font-family: "OstrichSansBlack";
   font-style: italic;
   color: white;
 }
@@ -94,7 +124,7 @@ hr {
 }
 p {
   color: white;
-  font-size: 100%;
+  font-size: 125%;
   line-height: 1.75;
   margin-bottom: .75em;
 }
@@ -111,6 +141,7 @@ a:hover {
 }
 body {
   background-color: #222222;
+  color: white;
 }
 p {
   font-family: "Signika Negative";
@@ -123,14 +154,27 @@ p:nth-child(n+3) {
 em {
   font-size: 2em;
   line-height: 1;
-  font-family: "Baskerville";
+  font-family: "OstrichSansRegular";
+  font-weight: 200;
+}
+.name-overlay {
+  background: url(/lib/img/ll-overlay.png) center center no-repeat;
+  background-size: cover;
+  min-height: 25em;
+  position: relative;
+}
+.personal-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .personal-name {
   margin: 0;
   text-align: center;
   font-size: 9em;
-  font-family: "OstrichSansBlack";
+  font-family: "OstrichSansBold";
   color: white;
+  opacity: 0;
 }
 .personality {
   letter-spacing: .05em;
@@ -138,17 +182,16 @@ em {
   font-family: "Baskerville";
   font-style: italic;
   text-align: center;
+  color: #208ba1;
   margin: 0;
-  margin-top: -0.5em;
-  color: white;
+  margin-bottom: .75em;
   font-weight: 500;
 }
 .page-header {
-  background: url("../img/bg.jpg") top center no-repeat;
+  background: url("../img/bg.jpg") top center no-repeat fixed;
   min-height: 20em;
 }
 .bar {
-  background-color: #222222;
   min-height: 1em;
   *zoom: 1;
 }
@@ -161,86 +204,27 @@ em {
 .bar:after {
   clear: both;
 }
-.jump-button-bar {
-  background-color: white;
-}
 .jump-button-bar li {
   display: inline-block;
   float: left;
   width: 20%;
   font-size: 1em;
-  text-transform: lowercase;
+  font-family: "OstrichSansRegular";
   text-align: center;
-}
-.jump-button-bar li:nth-child(1) {
-  -webkit-transition: background-color 0.75s ease-in-out;
-  -moz-transition: background-color 0.75s ease-in-out;
-  -ms-transition: background-color 0.75s ease-in-out;
-  -o-transition: background-color 0.75s ease-in-out;
-  transition: background-color 0.75s ease-in-out;
-}
-.jump-button-bar li:nth-child(1):hover {
-  background: #208ba1;
-}
-.jump-button-bar li:nth-child(1):hover a {
-  color: white;
-}
-.jump-button-bar li:nth-child(2) {
-  -webkit-transition: background-color 0.75s ease-in-out;
-  -moz-transition: background-color 0.75s ease-in-out;
-  -ms-transition: background-color 0.75s ease-in-out;
-  -o-transition: background-color 0.75s ease-in-out;
-  transition: background-color 0.75s ease-in-out;
-}
-.jump-button-bar li:nth-child(2):hover {
-  background: #370051;
-}
-.jump-button-bar li:nth-child(2):hover a {
-  color: white;
-}
-.jump-button-bar li:nth-child(3) {
-  -webkit-transition: background-color 0.75s ease-in-out;
-  -moz-transition: background-color 0.75s ease-in-out;
-  -ms-transition: background-color 0.75s ease-in-out;
-  -o-transition: background-color 0.75s ease-in-out;
-  transition: background-color 0.75s ease-in-out;
-}
-.jump-button-bar li:nth-child(3):hover {
-  background: #c23f58;
-}
-.jump-button-bar li:nth-child(3):hover a {
-  color: white;
-}
-.jump-button-bar li:nth-child(4) {
-  -webkit-transition: background-color 0.75s ease-in-out;
-  -moz-transition: background-color 0.75s ease-in-out;
-  -ms-transition: background-color 0.75s ease-in-out;
-  -o-transition: background-color 0.75s ease-in-out;
-  transition: background-color 0.75s ease-in-out;
-}
-.jump-button-bar li:nth-child(4):hover {
-  background: #f21680;
-}
-.jump-button-bar li:nth-child(4):hover a {
-  color: white;
-}
-.jump-button-bar li:nth-child(5) {
-  -webkit-transition: background-color 0.75s ease-in-out;
-  -moz-transition: background-color 0.75s ease-in-out;
-  -ms-transition: background-color 0.75s ease-in-out;
-  -o-transition: background-color 0.75s ease-in-out;
-  transition: background-color 0.75s ease-in-out;
-}
-.jump-button-bar li:nth-child(5):hover {
-  background: #09aee6;
-}
-.jump-button-bar li:nth-child(5):hover a {
-  color: white;
 }
 .jump-button-bar li a {
   text-decoration: none;
-  color: black;
+  color: #222;
+  opacity: .5;
   padding: 1em;
+  -webkit-transition: color 0.75s ease-in-out;
+  -moz-transition: color 0.75s ease-in-out;
+  -ms-transition: color 0.75s ease-in-out;
+  -o-transition: color 0.75s ease-in-out;
+  transition: color 0.75s ease-in-out;
+}
+.jump-button-bar li a:hover {
+  color: red;
 }
 .announcements {
   width: 100%;
@@ -249,6 +233,8 @@ em {
   text-align: center;
   position: fixed;
   color: white;
+  font-size: 75%;
+  z-index: 10;
 }
 .announcements p {
   margin: 0;
@@ -260,14 +246,6 @@ em {
   padding: 2px;
   text-transform: uppercase;
 }
-.container-outer {
-  width: 100%;
-  margin: auto;
-}
-.container-inner {
-  width: 50%;
-  margin: auto;
-}
 section {
   margin-bottom: 3em;
 }
@@ -275,45 +253,13 @@ section h2 {
   text-align: right;
 }
 .section-header h2 {
-  padding-right: 15px;
+  padding: 2em 2em 0 0;
   font-size: 2.5em;
   text-align: right;
-  font-family: "Squada One";
+  font-family: "OstrichSansBlack";
   font-weight: 600;
   text-transform: uppercase;
-}
-#about-section {
-  border-top: 3px solid #208ba1;
-}
-#about-section .section-header {
-  color: #208ba1;
-}
-#about-section a:link,
-#about-section a:visited,
-#about-section a:active {
-  color: #208ba1;
-}
-#mission-section {
-  border-top: 3px solid #370051;
-}
-#mission-section .section-header {
-  color: #370051;
-}
-#mission-section a:link,
-#mission-section a:visited,
-#mission-section a:active {
-  color: #370051;
-}
-#follow-section {
-  border-top: 3px solid #c23f58;
-}
-#follow-section .section-header {
-  color: #c23f58;
-}
-#follow-section a:link,
-#follow-section a:visited,
-#follow-section a:active {
-  color: #c23f58;
+  color: #888;
 }
 .tiny-letter {
   float: left;
@@ -329,35 +275,22 @@ section h2 {
   margin-left: 15px;
   margin-right: 20px;
 }
-#work-section {
-  border-top: 3px solid #f21680;
-}
-#work-section .section-header {
-  color: #f21680;
-}
-#work-section a:link,
-#work-section a:visited,
-#work-section a:active {
-  color: #f21680;
-}
-#work-section .container-inner {
-  margin-top: 2em;
-}
-#connect-section {
-  border-top: 3px solid #09aee6;
-}
-#connect-section .section-header {
-  color: #09aee6;
-}
-#connect-section a:link,
-#connect-section a:visited,
-#connect-section a:active {
-  color: #09aee6;
-}
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 40em) {
   .container-outer {
-    width: 85%;
-    max-width: 77.5em;
+    width: 100%;
+    margin: auto;
+  }
+  .container-break {
+    width: 130%;
+    margin: auto;
+    background: green;
+    margin-left: -33%;
+    text-align: center;
+    padding: 5em 0;
+  }
+  .container-inner {
+    width: 60%;
+    margin: auto;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
