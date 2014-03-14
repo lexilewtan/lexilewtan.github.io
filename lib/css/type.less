@@ -2,7 +2,16 @@ body {
 	font: 1em @serif;
 	font-weight: normal;
 	line-height: 1.5;
-	color: #aaa;
+	color: #ccc;
+}
+::selection {
+  background: @teal;
+  color: white;
+  /* Safari */
+}
+::-moz-selection {
+  background: @lime;
+  /* Firefox */
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -42,10 +51,13 @@ hr {
 	clear: both;
 }
 p {
-	color: white;
 	font-size: 125%;
 	line-height: 1.75;
 	margin-bottom: .75em;
+}
+blockquote {
+	font-size: 90%;
+	color: #666;
 }
 a {
 	font-weight: normal;

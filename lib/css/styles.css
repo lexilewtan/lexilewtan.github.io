@@ -83,7 +83,16 @@ body {
   font: 1em "Baskerville";
   font-weight: normal;
   line-height: 1.5;
-  color: #aaa;
+  color: #ccc;
+}
+::selection {
+  background: #208ba1;
+  color: white;
+  /* Safari */
+}
+::-moz-selection {
+  background: #bde515;
+  /* Firefox */
 }
 h1,
 h2,
@@ -125,10 +134,13 @@ hr {
   clear: both;
 }
 p {
-  color: white;
   font-size: 125%;
   line-height: 1.75;
   margin-bottom: .75em;
+}
+blockquote {
+  font-size: 90%;
+  color: #666;
 }
 a {
   font-weight: normal;
@@ -150,14 +162,15 @@ p {
   font-weight: 300;
   line-height: 2;
 }
-p:nth-child(n+3) {
-  margin-left: 4em;
-}
 em {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1;
   font-family: "OstrichSansRegular";
   font-weight: 200;
+  font-style: normal;
+  background: #bde515;
+  color: #208ba1;
+  text-align: center;
 }
 .name-overlay {
   background: url(/lib/img/ll-overlay.png) center center no-repeat;
@@ -230,10 +243,10 @@ em {
   margin: 0;
 }
 .announcements a {
-  background: #370051;
-  color: white;
+  color: #bde515;
   text-decoration: none;
-  padding: 2px;
+  padding: 2px 3px 1px;
+  border: 1px solid #bde515;
   text-transform: uppercase;
 }
 .main-section {
@@ -256,7 +269,7 @@ em {
   padding: 2em 2em 0 0;
   font-size: 2.5em;
   text-align: right;
-  font-family: "OstrichSansBlack";
+  font-family: "OstrichSansRegular";
   font-weight: 600;
   text-transform: uppercase;
   color: #888;
