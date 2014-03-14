@@ -142,6 +142,11 @@ blockquote {
 }
 a {
   font-weight: normal;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 a:link,
 a:visited,
@@ -260,6 +265,7 @@ em {
   -ms-transition: text-shadow 0.5s ease-in-out;
   -o-transition: text-shadow 0.5s ease-in-out;
   transition: text-shadow 0.5s ease-in-out;
+  border-radius: 3px;
 }
 .announcements a:hover {
   cursor: pointer;
@@ -370,6 +376,7 @@ em {
   -ms-transition: text-shadow 0.5s ease-in-out;
   -o-transition: text-shadow 0.5s ease-in-out;
   transition: text-shadow 0.5s ease-in-out;
+  border-radius: 3px;
   font-family: "OstrichSansRegular";
   font-size: 2em;
   width: 25%;
