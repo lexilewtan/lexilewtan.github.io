@@ -35,12 +35,9 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.fancy {
+  font-family: "Baskerville";
+  font-style: italic;
 }
 /* -- FLUID GRID STYLES -- */
 .grid {
@@ -71,6 +68,7 @@
   display: inline-block;
 }
 .half {
+  float: left;
   width: 50%;
 }
 .one-third {
@@ -91,7 +89,7 @@ body {
   /* Safari */
 }
 ::-moz-selection {
-  background: #bde515;
+  background: #370051;
   /* Firefox */
 }
 h1,
@@ -153,6 +151,13 @@ a:active {
 a:hover {
   color: #f777b5;
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   background-color: #222222;
   color: #aaa;
@@ -168,12 +173,12 @@ em {
   font-family: "OstrichSansRegular";
   font-weight: 200;
   font-style: normal;
-  background: #bde515;
+  background: #370051;
   color: #208ba1;
   text-align: center;
 }
 .name-overlay {
-  background: url(/lib/img/ll-overlay.png) center center no-repeat;
+  background: url(/lib/img/ll-overlay-d.png) center center no-repeat;
   background-size: cover;
   min-height: 25em;
   position: relative;
@@ -194,16 +199,17 @@ em {
 .personality {
   letter-spacing: .05em;
   font-size: 4em;
-  font-family: "Baskerville";
-  font-style: italic;
   text-align: center;
   color: #6a7cb3;
   margin: 0;
   margin-bottom: .75em;
   font-weight: 500;
+  font-family: "Baskerville";
+  font-style: italic;
 }
 .page-header {
   background: url("../img/bg.jpg") top center no-repeat fixed;
+  background-size: cover;
   min-height: 20em;
 }
 .jump-button-bar li {
@@ -216,7 +222,7 @@ em {
 }
 .jump-button-bar li a {
   text-decoration: none;
-  color: #222;
+  color: #888;
   opacity: .5;
   padding: 1em;
   -webkit-transition: opacity 0.75s ease-in-out;
@@ -227,7 +233,7 @@ em {
 }
 .jump-button-bar li a:hover {
   opacity: 1;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #6a7cb3;
 }
 .announcements {
   width: 100%;
@@ -243,11 +249,23 @@ em {
   margin: 0;
 }
 .announcements a {
-  color: #bde515;
+  color: #208ba1;
   text-decoration: none;
+  background: none;
   padding: 2px 3px 1px;
-  border: 1px solid #bde515;
+  border: 1px solid #208ba1;
   text-transform: uppercase;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+}
+.announcements a:hover {
+  cursor: pointer;
+  color: #28b0cc;
+  border-color: #28b0cc;
+  text-shadow: 0px 0px 5px #4cc3db;
 }
 .main-section {
   border-top: 3px solid #208ba1;
@@ -258,6 +276,16 @@ em {
   -o-transition: opacity 0.75s ease-in-out;
   transition: opacity 0.75s ease-in-out;
   opacity: .25;
+  *zoom: 1;
+}
+.main-section:before,
+.main-section:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.main-section:after {
+  clear: both;
 }
 .main-section:hover {
   opacity: 1;
@@ -278,18 +306,80 @@ em {
   background: url() center center fixed;
 }
 .tiny-letter {
-  float: left;
-  margin-right: 2em;
-  margin-left: 6em;
+  padding: 2em;
+  background: #6a7cb3;
+  *zoom: 1;
+  color: #222;
+}
+.tiny-letter:before,
+.tiny-letter:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tiny-letter:after {
+  clear: both;
+}
+.tiny-letter fieldset {
+  *zoom: 1;
+  border: none;
+}
+.tiny-letter fieldset:before,
+.tiny-letter fieldset:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tiny-letter fieldset:after {
+  clear: both;
 }
 .tiny-letter-name {
   font-family: futura;
 }
 .input-tiny-type-email {
-  width: 170px;
+  padding: 0.01em;
+  font-size: 2em;
   float: left;
-  margin-left: 15px;
-  margin-right: 20px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  width: 75%;
+  font-family: "Baskerville";
+  font-style: italic;
+}
+.input-tiny-type-email:focus {
+  outline: none;
+  border-bottom: 1px solid #370051;
+}
+.tiny-letter-promo {
+  font-size: .5em;
+  float: right;
+}
+.tiny-letter-promo a {
+  color: #3e4c79;
+}
+.tiny-letter-button {
+  color: #370051;
+  text-decoration: none;
+  background: none;
+  padding: 2px 3px 1px;
+  border: 1px solid #370051;
+  text-transform: uppercase;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+  font-family: "OstrichSansRegular";
+  font-size: 2em;
+  width: 25%;
+  padding: 0.3em 0.4em 0.1em;
+}
+.tiny-letter-button:hover {
+  cursor: pointer;
+  color: #5a0084;
+  border-color: #5a0084;
+  text-shadow: 0px 0px 5px #7c00b7;
 }
 @media only screen and (min-width: 40em) {
   .container-outer {
@@ -299,7 +389,7 @@ em {
   .container-break {
     width: 130%;
     margin: auto;
-    background-color: #bde515;
+    background-color: #370051;
     color: #208ba1;
     margin-left: -33%;
     text-align: center;

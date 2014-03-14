@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body {
 	background-color: @mainBackground;
 	color: #aaa;
@@ -17,12 +24,12 @@ em {
 	font-family: @ostRegular;
 	font-weight: 200;
 	font-style: normal;
-	background: @lime;
+	background: @purple;
 	color: @teal;
 	text-align: center;
 }
 .name-overlay {
-	background: url(/lib/img/ll-overlay.png) center center no-repeat;
+	background: url(/lib/img/ll-overlay-d.png) center center no-repeat;
 	background-size: cover;
 	min-height: 25em;
 	position: relative;
@@ -43,19 +50,19 @@ em {
 .personality {
 	letter-spacing: .05em;
 	font-size: 4em;
-	font-family: @serif;
-	font-style: italic;
 	text-align: center;
 	color: @slate;
 	margin: 0;
 	margin-bottom: .75em;
 	font-weight: 500;
+	.fancy;
 }
 
 
 
 .page-header {
 	background: url("../img/bg.jpg") top center no-repeat fixed;
+	background-size: cover;
 	min-height: 20em;
 }
 
@@ -70,17 +77,13 @@ em {
 		
 		a {
 			text-decoration: none;
-			color: #222;
+			color: #888;
 			opacity: .5;
 			padding: 1em;
-		    -webkit-transition: opacity .75s ease-in-out;
-		    -moz-transition: opacity .75s ease-in-out;
-		    -ms-transition: opacity .75s ease-in-out;
-		    -o-transition: opacity .75s ease-in-out;
-		    transition: opacity .75s ease-in-out;
+			.fadeIn();
 			&:hover {
 				opacity: 1;
-				border-bottom: 3px solid red;
+				border-bottom: 3px solid @slate;
 			}
 		}
 	}
@@ -101,11 +104,7 @@ em {
 		margin: 0;
 	}
 	a {
-		color: @lime;
-		text-decoration: none;
-		padding: 2px 3px 1px;
-		border: 1px solid @lime;
-		text-transform: uppercase;
+		.button;
 	}
 }
 
@@ -113,12 +112,9 @@ em {
 .main-section {
 	border-top: 3px solid @teal;
 	margin-bottom: 3em;
-    -webkit-transition: opacity .75s ease-in-out;
-    -moz-transition: opacity .75s ease-in-out;
-    -ms-transition: opacity .75s ease-in-out;
-    -o-transition: opacity .75s ease-in-out;
-    transition: opacity .75s ease-in-out;
+	.fadeIn;
 	opacity: .25;
+	.clearfix;
 	&:hover {
 		opacity: 1;
 	}
@@ -178,11 +174,14 @@ em {
 //	}
 
 .tiny-letter {
-	float: left;
-	margin-right: 2em;
-	margin-left: 6em;
-	
-	
+	padding: 2em;
+	background: @slate;
+	.clearfix;
+	color: #222;
+	fieldset {
+		.clearfix;
+		border: none;
+	}
 }
 
 .tiny-letter-name {
@@ -190,10 +189,32 @@ em {
 }
 
 .input-tiny-type-email {
-	width: 170px;
+	padding: 0.01em;
+	font-size: 2em;
 	float: left;
-	margin-left: 15px; 
-	margin-right: 20px; 
+	border: none;
+	background: none;
+	border-bottom: 1px solid #ccc;
+	width: 75%;
+	.fancy;
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid @purple;
+	}
+}
+.tiny-letter-promo {
+	font-size: .5em;
+	float: right;
+	a {
+		color: darken(@slate, 20%);
+	}
+}
+.tiny-letter-button {
+	.button(@purple);
+	font-family: @ostRegular;
+	font-size: 2em;
+	width: 25%;
+	padding: 0.3em 0.4em 0.1em;
 }
 
 //	#work-section {
