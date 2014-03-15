@@ -61,7 +61,7 @@ em {
 
 
 .page-header {
-	background: url("../img/bg.jpg") top center no-repeat fixed;
+	background: url("../img/bg-px-soft.png") top center no-repeat fixed;
 	background-size: cover;
 	min-height: 20em;
 }
@@ -111,7 +111,7 @@ em {
 
 .main-section {
 	border-top: 3px solid @teal;
-	margin-bottom: 3em;
+	padding-bottom: 5em;
 	.fadeIn;
 	opacity: .25;
 	.clearfix;
@@ -136,8 +136,13 @@ em {
 }
 
 
+#follow-section {
+	background: url("../img/bg-px-soft.png") center center;
+	background-size: cover;
+}
+
 #mission-section {
-	background: url() center center fixed;
+	background: @purple;
 }
 
 //	#about-section {
@@ -174,8 +179,9 @@ em {
 //	}
 
 .tiny-letter {
-	padding: 2em;
-	background: @slate;
+	//padding: 2em;
+	//background: @slate;
+	margin-right: 5em;
 	.clearfix;
 	color: #222;
 	fieldset {
@@ -240,3 +246,8 @@ em {
 //		}
 //		
 //	}
+
+
+.apply-others, .apply-dev {
+	.button;
+}

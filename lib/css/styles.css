@@ -213,7 +213,7 @@ em {
   font-style: italic;
 }
 .page-header {
-  background: url("../img/bg.jpg") top center no-repeat fixed;
+  background: url("../img/bg-px-soft.png") top center no-repeat fixed;
   background-size: cover;
   min-height: 20em;
 }
@@ -266,16 +266,15 @@ em {
   -o-transition: text-shadow 0.5s ease-in-out;
   transition: text-shadow 0.5s ease-in-out;
   border-radius: 3px;
+  font-family: "Signika Negative";
 }
 .announcements a:hover {
   cursor: pointer;
-  color: #28b0cc;
-  border-color: #28b0cc;
   text-shadow: 0px 0px 5px #4cc3db;
 }
 .main-section {
   border-top: 3px solid #208ba1;
-  margin-bottom: 3em;
+  padding-bottom: 5em;
   -webkit-transition: opacity 0.75s ease-in-out;
   -moz-transition: opacity 0.75s ease-in-out;
   -ms-transition: opacity 0.75s ease-in-out;
@@ -308,12 +307,15 @@ em {
   text-transform: uppercase;
   color: #888;
 }
+#follow-section {
+  background: url("../img/bg-px-soft.png") center center;
+  background-size: cover;
+}
 #mission-section {
-  background: url() center center fixed;
+  background: #370051;
 }
 .tiny-letter {
-  padding: 2em;
-  background: #6a7cb3;
+  margin-right: 5em;
   *zoom: 1;
   color: #222;
 }
@@ -377,6 +379,7 @@ em {
   -o-transition: text-shadow 0.5s ease-in-out;
   transition: text-shadow 0.5s ease-in-out;
   border-radius: 3px;
+  font-family: "Signika Negative";
   font-family: "OstrichSansRegular";
   font-size: 2em;
   width: 25%;
@@ -384,9 +387,28 @@ em {
 }
 .tiny-letter-button:hover {
   cursor: pointer;
-  color: #5a0084;
-  border-color: #5a0084;
   text-shadow: 0px 0px 5px #7c00b7;
+}
+.apply-others,
+.apply-dev {
+  color: #208ba1;
+  text-decoration: none;
+  background: none;
+  padding: 2px 3px 1px;
+  border: 1px solid #208ba1;
+  text-transform: uppercase;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+  border-radius: 3px;
+  font-family: "Signika Negative";
+}
+.apply-others:hover,
+.apply-dev:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #4cc3db;
 }
 @media only screen and (min-width: 40em) {
   .container-outer {
