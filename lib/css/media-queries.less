@@ -20,111 +20,286 @@
 		width: 60%;
 		margin: auto;
 	}
+	.main-section {
+		.fadeIn;
+		opacity: .25;
+	}
+	
+	
+	
+	
+	
+	
+
+	em {
+		font-size:  2.5em;
+		line-height: 1;
+		font-family: @ostRegular;
+		font-weight: 200;
+		font-style: normal;
+		background: @purple;
+		color: @teal;
+		text-align: center;
+	}
+
+	// HEADER
+
+
+	.page-header {
+		background: url("../img/bg-px-soft.png") top center no-repeat fixed;
+		background-size: cover;
+		min-height: 20em;
+	}
+	.name-overlay {
+		background-size: cover;
+		min-height: 25em;
+		position: relative;
+	}
+	.personal-info {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.personal-name {
+		margin: 0;
+		opacity: 0;
+		font-size: 9em;
+	}
+	.personality {
+		font-size: 4em;
+		margin: 0;
+		margin-bottom: .75em;
+	}
+
+
+	
+
+
+	.jump-button-bar {
+		li {
+			display: inline-block; 
+			float: left; 
+			width: 20%;
+			font-size: 1em;
+			font-family: @ostRegular;
+			text-align: center;
+		
+			a {
+				text-decoration: none;
+				color: #888;
+				opacity: .5;
+				padding: 1em;
+				.fadeIn();
+				&:hover {
+					opacity: 1;
+					border-bottom: 3px solid @slate;
+				}
+			}
+		}
+	}
+
+
+
+	.announcements {
+		width: 100%;
+		background-color: @mainBackground;
+		border-bottom: 3px solid @slate;
+		text-align: center;
+		position: fixed;
+		color: white;
+		font-size: 66%;
+		z-index: 10;
+		p {
+			margin: 0;
+		}
+		a {
+			.button;
+		}
+	}
+
+
+	.main-section {
+		border-top: 3px solid @teal;
+		padding-bottom: 5em;
+		.clearfix;
+		&:hover {
+			opacity: 1;
+		}
+		h2 {
+			text-align: right;
+		}
+	}
+	.section-header {
+		h2 {
+			padding: 2em 2em 0 0;
+			font-size: 2.5em;
+			text-align: right;
+			font-family: @ostRegular;
+			font-weight: 600;
+			text-transform: uppercase;
+			//letter-spacing: .25em;
+			color: #888;
+		}
+	}
+
+
+	#follow-section {
+		background: url("../img/bg-px-soft.png") center center;
+		background-size: cover;
+	}
+
+	#mission-section {
+		background: @purple;
+	}
+
+	//	#about-section {
+	//		border-top: 3px solid @teal;
+	//		
+	//		.section-header {
+	//			color: @teal;
+	//		}
+	//		a:link, a:visited, a:active {
+	//			color: @teal;
+	//		}
+	//			
+	//		
+	//	}
+	//	#mission-section {
+	//		border-top: 3px solid @purple;
+	//		.section-header {
+	//			color: @purple;
+	//		}
+	//		a:link, a:visited, a:active {
+	//			color: @purple;
+	//		}
+	//		
+	//	}
+	//	#follow-section {
+	//	//	background: @grayMed;
+	//		border-top: 3px solid @follow-color;
+	//		.section-header {
+	//			color: @follow-color;
+	//		}
+	//		a:link, a:visited, a:active {
+	//			color: @follow-color;
+	//		}
+	//	}
+
+	.tiny-letter {
+		//padding: 2em;
+		//background: @slate;
+		margin-right: 5em;
+		.clearfix;
+		color: #222;
+		fieldset {
+			.clearfix;
+			border: none;
+		}
+	}
+
+	.tiny-letter-name {
+		font-family: futura;
+	}
+
+	.input-tiny-type-email {
+		padding: 0.01em;
+		font-size: 2em;
+		float: left;
+		border: none;
+		background: none;
+		border-bottom: 1px solid #ccc;
+		width: 75%;
+		.fancy;
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid @purple;
+		}
+	}
+	.tiny-letter-promo {
+		font-size: .5em;
+		float: right;
+		a {
+			color: darken(@slate, 20%);
+		}
+	}
+	.tiny-letter-button {
+		.button(@purple);
+		font-family: @ostRegular;
+		font-size: 2em;
+		width: 25%;
+		padding: 0.3em 0.4em 0.1em;
+	}
+
+	//	#work-section {
+	//		border-top: 3px solid @work-color;
+	//		.section-header {
+	//			color: @work-color;
+	//		}
+	//		a:link, a:visited, a:active {
+	//			color: @work-color;
+	//		}
+	//		.container-inner {
+	//			margin-top: 2em;
+	//		}
+	//	}
+	//	
+	//	#connect-section {
+	//		border-top: 3px solid @connect-color;
+	//		.section-header {
+	//			color: @connect-color;
+	//		}
+	//		a:link, a:visited, a:active {
+	//			color: @connect-color;
+	//		}
+	//		
+	//	}
+
+
+	.apply-others, .apply-dev {
+		.button;
+	}
+	
+	
+	
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 50em) and (max-width: 70em) {
 	.container-outer {
 
 	}
 }
 
-//  iPad 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
- {	.personality {
- 		font-weight: 400;
- 	}	
+@media only screen and (min-width: 35em) and (max-width: 50em) {
+	.container-outer {
+
+	}
 }
 
-// landscape iPhone 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape) { 
-	.personal-name {
-		font-size: 3em;
-	}
-	.personality {
-		font-size: 1.75em;
-		font-weight: 400;
-	}
-	.page-header {
-		min-height: 6em;
-	}
-	.jump-button-bar {
-		li {
-			width: 19%;
-		}
-	}
-	p {
-		font-size: 45%;
-	}
-	.section-header {
-		h2 {
-			font-size: 1.5em;
-			font-weight: 600;
-			//letter-spacing: .25em;
-		}
-	}	
-	.container-inner {
-		width: 75%;
-		margin: auto;
-	}
-	em {
-		font-weight: 200;
-	}
-
-}
-
-
-// portrait iPhone 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait) { 
-	.personal-name {
-		font-size: 3em;
-	}
-	.personality {
-		font-size: 1.75em;
-		font-weight: 400;
-		
-	}
-	.page-header {
-		min-height: 6em;
-	}
-	
-	.jump-button-bar {
-		li {
-			width: 19%;
-		}
-	}
-	em {
-		font-weight: 200;
-	}
-	p {
-		font-size: 55%;
-		font-weight: 500;
+// iphone
+@media only screen and (max-width: 35em) {
+	.container-outer {
+		width: 100%;
 	}
 	.container-inner {
-		width: 75%;
-		margin: auto;
+		width: 100%;
+		padding: 1em;
+	}
+	#follow-section {
+		display: none; //temp
 	}
 	
-	.section-header {
-		h2 {
-			font-size: 1.5em;
-			font-weight: 600;
-			//letter-spacing: .25em;
-		}
-	}	
-}
+	.page-header {
+		background-color: #ffe8ff;
+	}
+	.name-overlay {
+		background-size: 175%;
+		height: 10em;
+	}
 
-// the big screen 
-@media only screen 
-and (min-width : 1824px) {
-
+	.personality {
+		font-size: 2em;
+		margin-top: 1em;
+	}
 }
 
 
