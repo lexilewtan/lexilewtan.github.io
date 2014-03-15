@@ -36,7 +36,7 @@
   font-style: normal;
 }
 .fancy {
-  font-family: "Baskerville";
+  font-family: "Baskerville", serif;
   font-style: italic;
 }
 /* -- FLUID GRID STYLES -- */
@@ -78,7 +78,7 @@
   width: 66%;
 }
 body {
-  font: 1em "Signika Negative";
+  font: 1em "Signika Negative", helvetica, sans-serif;
   font-weight: 300;
   line-height: 2;
   color: #ccc;
@@ -168,7 +168,7 @@ body {
   color: #aaa;
 }
 .name-overlay {
-  background: url(/lib/img/ll-overlay-d.png) center center no-repeat;
+  background: url(/lib/img/ll-overlay-b-g.png) center center no-repeat;
 }
 .personal-name {
   text-align: center;
@@ -177,10 +177,10 @@ body {
   opacity: 0;
 }
 .personality {
-  font-family: "Baskerville";
+  font-family: "Baskerville", serif;
   font-style: italic;
   text-align: center;
-  color: #6a7cb3;
+  color: #208ba1;
   letter-spacing: .05em;
 }
 @media only screen and (min-width: 40em) {
@@ -220,7 +220,7 @@ body {
     text-align: center;
   }
   .page-header {
-    background: url("../img/bg-px-soft.png") top center no-repeat fixed;
+    background: url("../img/bg-px-soft3.png") top right no-repeat fixed;
     background-size: cover;
     min-height: 20em;
   }
@@ -293,7 +293,7 @@ body {
     -o-transition: text-shadow 0.5s ease-in-out;
     transition: text-shadow 0.5s ease-in-out;
     border-radius: 3px;
-    font-family: "Signika Negative";
+    font-family: "Signika Negative", helvetica, sans-serif;
   }
   .announcements a:hover {
     cursor: pointer;
@@ -329,11 +329,11 @@ body {
     color: #888;
   }
   #follow-section {
-    background: url("../img/bg-px-soft.png") center center;
+    background: url("/lib/img/taxi-px-soft.png") center center;
     background-size: cover;
   }
   #mission-section {
-    background: #370051;
+    background: #333;
   }
   .tiny-letter {
     margin-right: 5em;
@@ -373,7 +373,7 @@ body {
     background: none;
     border-bottom: 1px solid #ccc;
     width: 75%;
-    font-family: "Baskerville";
+    font-family: "Baskerville", serif;
     font-style: italic;
   }
   .input-tiny-type-email:focus {
@@ -400,7 +400,7 @@ body {
     -o-transition: text-shadow 0.5s ease-in-out;
     transition: text-shadow 0.5s ease-in-out;
     border-radius: 3px;
-    font-family: "Signika Negative";
+    font-family: "Signika Negative", helvetica, sans-serif;
     font-family: "OstrichSansRegular";
     font-size: 2em;
     width: 25%;
@@ -409,6 +409,9 @@ body {
   .tiny-letter-button:hover {
     cursor: pointer;
     text-shadow: 0px 0px 5px #7c00b7;
+  }
+  #connect-section {
+    background: url(http://subtlepatterns.com/patterns/zwartevilt.png);
   }
   .apply-others,
   .apply-dev {
@@ -424,7 +427,7 @@ body {
     -o-transition: text-shadow 0.5s ease-in-out;
     transition: text-shadow 0.5s ease-in-out;
     border-radius: 3px;
-    font-family: "Signika Negative";
+    font-family: "Signika Negative", helvetica, sans-serif;
   }
   .apply-others:hover,
   .apply-dev:hover {
