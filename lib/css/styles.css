@@ -140,7 +140,7 @@ p {
 }
 blockquote {
   font-size: 90%;
-  color: #666;
+  color: #777;
 }
 a {
   font-weight: normal;
@@ -210,16 +210,6 @@ body {
     -o-transition: opacity 0.75s ease-in-out;
     transition: opacity 0.75s ease-in-out;
     opacity: .25;
-  }
-  em {
-    font-size: 2.5em;
-    line-height: 1;
-    font-family: "OstrichSansRegular";
-    font-weight: 200;
-    font-style: normal;
-    background: #370051;
-    color: #208ba1;
-    text-align: center;
   }
   .page-header {
     background: url("../img/bg-px-soft3.png") top right no-repeat fixed;
@@ -330,11 +320,69 @@ body {
     text-transform: uppercase;
     color: #888;
   }
+  em {
+    font-size: 2.75rem;
+    line-height: 1;
+    font-family: "OstrichSansRegular";
+    font-weight: 200;
+    font-style: normal;
+    background: #370051;
+    color: #208ba1;
+    text-align: center;
+  }
+  #about-section blockquote {
+    margin-top: 2.75rem;
+  }
+  #about-section blockquote p {
+    border-top: 1px solid #444444;
+    padding-top: 1em;
+    position: relative;
+  }
+  #about-section blockquote p:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    margin-top: -0.275em;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #444;
+    border-radius: 100px;
+    background: #242226;
+  }
+  #about-section blockquote p:first-child {
+    float: left;
+    width: 33%;
+    padding-right: 1em;
+  }
+  #about-section blockquote p:first-child:before {
+    border-color: #f53d57;
+  }
+  #about-section blockquote p:last-child {
+    float: left;
+    width: 66%;
+  }
+  #about-section blockquote p:last-child:before {
+    border-color: #57068c;
+  }
   #follow-section {
     background: url("/lib/img/pattern-t.png") center center repeat;
   }
-  #mission-section {
-    background: #333;
+  #mission-section h1 {
+    clear: both;
+    text-align: center;
+    line-height: 1;
+  }
+  .mission-blurb {
+    border-right: 1px solid #444444;
+    border-bottom: 1px solid #444444;
+    padding: 0 1em 1em 0;
+    margin: 0 1em 1em 0;
+  }
+  .mission-future {
+    border-top: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 1em 0 0 1em;
+    margin: 1em 0 0 1em;
   }
   .tiny-letter {
     padding: 2em;

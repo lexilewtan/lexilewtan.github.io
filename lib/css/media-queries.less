@@ -31,16 +31,6 @@
 	
 	
 
-	em {
-		font-size:  2.5em;
-		line-height: 1;
-		font-family: @ostRegular;
-		font-weight: 200;
-		font-style: normal;
-		background: @purple;
-		color: @teal;
-		text-align: center;
-	}
 
 	// HEADER
 
@@ -141,48 +131,77 @@
 			color: #888;
 		}
 	}
+	em {
+		font-size:  2.75rem;
+		line-height: 1;
+		font-family: @ostRegular;
+		font-weight: 200;
+		font-style: normal;
+		background: @purple;
+		color: @teal;
+		text-align: center;
+	}
 
-
+	#about-section {
+		blockquote {
+			margin-top: 2.75rem;
+			p {
+				border-top: @hairline;
+				padding-top: 1em;
+				position: relative;
+				&:before {
+					content: " ";
+					position: absolute;
+					top: 0;
+					margin-top: -0.275em;
+					width: 0.5em;
+					height: 0.5em;
+					border: 1px solid #444;
+					border-radius: 100px;
+					background: @darkGrey;
+				}
+				&:first-child {
+					&:before {
+						border-color: #f53d57; //betaworks
+					}
+					.one-third;
+					padding-right: 1em;
+				}
+				&:last-child {
+					&:before {
+						border-color: #57068c //nyu
+					}
+					.two-thirds;
+					
+				}
+			}
+		}
+	}
 	#follow-section {
 		background: url("/lib/img/pattern-t.png") center center repeat;
 	}
 
 	#mission-section {
-		background: #333;
+		//background: #333;
+		h1 {
+			clear: both;
+			text-align: center;
+			line-height: 1;
+		}
+	}
+	.mission-blurb {
+		border-right: @hairline;
+		border-bottom: @hairline;
+		padding: 0 1em 1em 0;
+		margin: 0 1em 1em 0;
+	}
+	.mission-future {
+		border-top: @hairline;
+		border-left: @hairline;
+		padding: 1em 0 0 1em;
+		margin: 1em 0 0 1em;
 	}
 
-	//	#about-section {
-	//		border-top: 3px solid @teal;
-	//		
-	//		.section-header {
-	//			color: @teal;
-	//		}
-	//		a:link, a:visited, a:active {
-	//			color: @teal;
-	//		}
-	//			
-	//		
-	//	}
-	//	#mission-section {
-	//		border-top: 3px solid @purple;
-	//		.section-header {
-	//			color: @purple;
-	//		}
-	//		a:link, a:visited, a:active {
-	//			color: @purple;
-	//		}
-	//		
-	//	}
-	//	#follow-section {
-	//	//	background: @grayMed;
-	//		border-top: 3px solid @follow-color;
-	//		.section-header {
-	//			color: @follow-color;
-	//		}
-	//		a:link, a:visited, a:active {
-	//			color: @follow-color;
-	//		}
-	//	}
 
 	.tiny-letter {
 		padding: 2em;
