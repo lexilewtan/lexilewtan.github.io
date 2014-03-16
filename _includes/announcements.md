@@ -1,1 +1,1 @@
-hi i wrote a thing [thing](#)
+hi i wrote a thing [link to thing](#)

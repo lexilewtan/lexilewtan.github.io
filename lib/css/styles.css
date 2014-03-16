@@ -72,9 +72,11 @@
   width: 50%;
 }
 .one-third {
+  float: left;
   width: 33%;
 }
 .two-thirds {
+  float: left;
   width: 66%;
 }
 body {
@@ -89,7 +91,7 @@ body {
   /* Safari */
 }
 ::-moz-selection {
-  background: #370051;
+  background: #208ba1;
   /* Firefox */
 }
 h1,
@@ -151,10 +153,10 @@ a {
 a:link,
 a:visited,
 a:active {
-  color: #f21680;
+  color: #b42bd6;
 }
 a:hover {
-  color: #f777b5;
+  color: #d280e7;
 }
 * {
   margin: 0;
@@ -191,7 +193,7 @@ body {
   .container-break {
     width: 130%;
     margin: auto;
-    background-color: #370051;
+    background-color: #208ba1;
     color: #208ba1;
     margin-left: -33%;
     text-align: center;
@@ -265,12 +267,12 @@ body {
   }
   .jump-button-bar li a:hover {
     opacity: 1;
-    border-bottom: 3px solid #6a7cb3;
+    border-bottom: 3px solid #b42bd6;
   }
   .announcements {
     width: 100%;
     background-color: #222222;
-    border-bottom: 3px solid #6a7cb3;
+    border-bottom: 3px solid #208ba1;
     text-align: center;
     position: fixed;
     color: white;
@@ -281,11 +283,11 @@ body {
     margin: 0;
   }
   .announcements a {
-    color: #208ba1;
+    color: #b42bd6;
     text-decoration: none;
     background: none;
     padding: 2px 3px 1px;
-    border: 1px solid #208ba1;
+    border: 1px solid #b42bd6;
     text-transform: uppercase;
     -webkit-transition: text-shadow 0.5s ease-in-out;
     -moz-transition: text-shadow 0.5s ease-in-out;
@@ -297,7 +299,7 @@ body {
   }
   .announcements a:hover {
     cursor: pointer;
-    text-shadow: 0px 0px 5px #4cc3db;
+    text-shadow: 0px 0px 5px #d280e7;
   }
   .main-section {
     border-top: 3px solid #208ba1;
@@ -329,16 +331,17 @@ body {
     color: #888;
   }
   #follow-section {
-    background: url("/lib/img/taxi-px-soft.png") center center;
-    background-size: cover;
+    background: url("/lib/img/pattern-t.png") center center repeat;
   }
   #mission-section {
     background: #333;
   }
   .tiny-letter {
+    padding: 2em;
+    background: #208ba1;
     margin-right: 5em;
     *zoom: 1;
-    color: #222;
+    color: #242226;
   }
   .tiny-letter:before,
   .tiny-letter:after {
@@ -385,7 +388,7 @@ body {
     float: right;
   }
   .tiny-letter-promo a {
-    color: #3e4c79;
+    color: #0f424c;
   }
   .tiny-letter-button {
     color: #370051;
@@ -409,9 +412,6 @@ body {
   .tiny-letter-button:hover {
     cursor: pointer;
     text-shadow: 0px 0px 5px #7c00b7;
-  }
-  #connect-section {
-    background: url(http://subtlepatterns.com/patterns/zwartevilt.png);
   }
   .apply-others,
   .apply-dev {

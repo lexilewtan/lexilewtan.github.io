@@ -10,7 +10,7 @@
 	.container-break {
 		width: 130%;
 		margin: auto;
-		background-color: @lime;
+		background-color: @teal;
 		color: @teal;
 		margin-left: -33%;
 		text-align: center;
@@ -92,7 +92,7 @@
 				.fadeIn();
 				&:hover {
 					opacity: 1;
-					border-bottom: 3px solid @slate;
+					border-bottom: 3px solid @orchid;
 				}
 			}
 		}
@@ -103,7 +103,7 @@
 	.announcements {
 		width: 100%;
 		background-color: @mainBackground;
-		border-bottom: 3px solid @slate;
+		border-bottom: 3px solid @teal;
 		text-align: center;
 		position: fixed;
 		color: white;
@@ -113,7 +113,7 @@
 			margin: 0;
 		}
 		a {
-			.button;
+			.button(@orchid);
 		}
 	}
 
@@ -144,8 +144,7 @@
 
 
 	#follow-section {
-		background: url("/lib/img/taxi-px-soft.png") center center;
-		background-size: cover;
+		background: url("/lib/img/pattern-t.png") center center repeat;
 	}
 
 	#mission-section {
@@ -186,11 +185,11 @@
 	//	}
 
 	.tiny-letter {
-		//padding: 2em;
-		//background: @slate;
+		padding: 2em;
+		background: @teal;
 		margin-right: 5em;
 		.clearfix;
-		color: #222;
+		color: @darkGrey;
 		fieldset {
 			.clearfix;
 			border: none;
@@ -219,7 +218,7 @@
 		font-size: .5em;
 		float: right;
 		a {
-			color: darken(@slate, 20%);
+			color: darken(@teal, 20%);
 		}
 	}
 	.tiny-letter-button {
@@ -256,7 +255,8 @@
 
 
 	#connect-section {
-		background: url(http://subtlepatterns.com/patterns/zwartevilt.png);
+		//background: url(http://subtlepatterns.com/patterns/zwartevilt.png);
+
 	}
 
 	.apply-others, .apply-dev {
