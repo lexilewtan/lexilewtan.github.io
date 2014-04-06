@@ -110,13 +110,12 @@ h1 {
   font-weight: 300;
 }
 h2 {
-  font-size: 1.75em;
-  text-transform: uppercase;
+  font-size: 2.0em;
+  font-family: "OstrichSansBold";
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: "OstrichSansBlack";
-  color: white;
 }
 h4 {
   font-size: 1.25em;
@@ -245,6 +244,7 @@ body {
   .announcements {
     width: 100%;
     background-color: #222222;
+    background: #222222 url("/lib/img/pattern-t.png") center center repeat;
     border-bottom: 3px solid #208ba1;
     text-align: center;
     position: fixed;
@@ -311,8 +311,7 @@ body {
     background-color: rgba(35, 29, 38, 0.85);
   }
   .main-section:hover em {
-    color: white;
-    background-color: #222;
+    color: #eee;
   }
   .main-section h2 {
     text-align: right;
@@ -331,7 +330,7 @@ body {
     color: #888;
   }
   em {
-    font-size: 2.75rem;
+    font-size: 2.6rem;
     -webkit-transition: color 0.75s ease-in-out;
     -moz-transition: color 0.75s ease-in-out;
     -ms-transition: color 0.75s ease-in-out;
@@ -344,6 +343,7 @@ body {
     background: #370051;
     color: #208ba1;
     text-align: center;
+    padding: .25em 0 0;
   }
   #about-section blockquote {
     margin-top: 2.75rem;
@@ -379,6 +379,118 @@ body {
   #about-section blockquote p:last-child:before {
     border-color: #57068c;
   }
+  #follow-section h3 {
+    margin-bottom: 0.5em;
+  }
+  #follow-section a {
+    color: #208ba1;
+    text-decoration: none;
+    background: none;
+    padding: 2px 3px 1px;
+    border: 1px solid #208ba1;
+    text-transform: uppercase;
+    -webkit-transition: text-shadow 0.5s ease-in-out;
+    -moz-transition: text-shadow 0.5s ease-in-out;
+    -ms-transition: text-shadow 0.5s ease-in-out;
+    -o-transition: text-shadow 0.5s ease-in-out;
+    transition: text-shadow 0.5s ease-in-out;
+    border-radius: 3px;
+    font-family: "Signika Negative", helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+  #follow-section a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #4cc3db;
+  }
+  #follow-section a:nth-child(n+1) {
+    color: #8e00d1;
+    text-decoration: none;
+    background: none;
+    padding: 2px 3px 1px;
+    border: 1px solid #8e00d1;
+    text-transform: uppercase;
+    -webkit-transition: text-shadow 0.5s ease-in-out;
+    -moz-transition: text-shadow 0.5s ease-in-out;
+    -ms-transition: text-shadow 0.5s ease-in-out;
+    -o-transition: text-shadow 0.5s ease-in-out;
+    transition: text-shadow 0.5s ease-in-out;
+    border-radius: 3px;
+    font-family: "Signika Negative", helvetica, sans-serif;
+  }
+  #follow-section a:nth-child(n+1):hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #bf38ff;
+  }
+  #follow-section .tiny-letter {
+    *zoom: 1;
+  }
+  #follow-section .tiny-letter:before,
+  #follow-section .tiny-letter:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  #follow-section .tiny-letter:after {
+    clear: both;
+  }
+  #follow-section .tiny-letter fieldset {
+    *zoom: 1;
+    border: none;
+  }
+  #follow-section .tiny-letter fieldset:before,
+  #follow-section .tiny-letter fieldset:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  #follow-section .tiny-letter fieldset:after {
+    clear: both;
+  }
+  #follow-section .tiny-letter-name {
+    font-family: futura;
+    font-style: normal;
+  }
+  #follow-section .input-tiny-type-email {
+    padding: 0.01em;
+    float: left;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #208ba1;
+    width: 75%;
+    font-size: 125%;
+    color: white;
+  }
+  #follow-section .input-tiny-type-email:focus {
+    outline: none;
+    border-bottom: 1px solid #ccc;
+  }
+  #follow-section .tiny-letter-button {
+    color: #208ba1;
+    text-decoration: none;
+    background: none;
+    padding: 2px 3px 1px;
+    border: 1px solid #208ba1;
+    text-transform: uppercase;
+    -webkit-transition: text-shadow 0.5s ease-in-out;
+    -moz-transition: text-shadow 0.5s ease-in-out;
+    -ms-transition: text-shadow 0.5s ease-in-out;
+    -o-transition: text-shadow 0.5s ease-in-out;
+    transition: text-shadow 0.5s ease-in-out;
+    border-radius: 3px;
+    font-family: "Signika Negative", helvetica, sans-serif;
+    font-size: 1.5rem;
+    width: 25%;
+    position: relative;
+    top: -0.75em;
+  }
+  #follow-section .tiny-letter-button:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #4cc3db;
+  }
+  #follow-section label {
+    font-size: 125%;
+    font-style: italic;
+  }
   #mission-section h1 {
     clear: both;
     text-align: center;
@@ -396,64 +508,16 @@ body {
     padding: 1em 0 0 1em;
     margin: 1em 0 0 1em;
   }
-  .tiny-letter {
-    padding: 2em;
-    background: #208ba1;
-    *zoom: 1;
-    color: #242226;
-  }
-  .tiny-letter:before,
-  .tiny-letter:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  .tiny-letter:after {
-    clear: both;
-  }
-  .tiny-letter fieldset {
-    *zoom: 1;
-    border: none;
-  }
-  .tiny-letter fieldset:before,
-  .tiny-letter fieldset:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  .tiny-letter fieldset:after {
-    clear: both;
-  }
-  .tiny-letter-name {
-    font-family: futura;
-  }
-  .input-tiny-type-email {
-    padding: 0.01em;
-    font-size: 2em;
+  .connect__email {
     float: left;
-    border: none;
-    background: none;
-    border-bottom: 1px solid #ccc;
-    width: 75%;
-    font-family: "Signika Negative", helvetica, sans-serif;
+    width: 66%;
   }
-  .input-tiny-type-email:focus {
-    outline: none;
-    border-bottom: 1px solid #370051;
-  }
-  .tiny-letter-promo {
-    font-size: .5em;
-    float: right;
-  }
-  .tiny-letter-promo a {
-    color: #0f424c;
-  }
-  .tiny-letter-button {
-    color: #370051;
+  .connect__email a {
+    color: #8e00d1;
     text-decoration: none;
     background: none;
     padding: 2px 3px 1px;
-    border: 1px solid #370051;
+    border: 1px solid #8e00d1;
     text-transform: uppercase;
     -webkit-transition: text-shadow 0.5s ease-in-out;
     -moz-transition: text-shadow 0.5s ease-in-out;
@@ -462,17 +526,16 @@ body {
     transition: text-shadow 0.5s ease-in-out;
     border-radius: 3px;
     font-family: "Signika Negative", helvetica, sans-serif;
-    font-family: "OstrichSansRegular";
-    font-size: 2em;
-    width: 25%;
-    padding: 0.3em 0.4em 0.1em;
   }
-  .tiny-letter-button:hover {
+  .connect__email a:hover {
     cursor: pointer;
-    text-shadow: 0px 0px 5px #7c00b7;
+    text-shadow: 0px 0px 5px #bf38ff;
   }
-  .apply-others,
-  .apply-dev {
+  .connect__hired {
+    float: left;
+    width: 33%;
+  }
+  .connect__hired a {
     color: #208ba1;
     text-decoration: none;
     background: none;
@@ -487,8 +550,7 @@ body {
     border-radius: 3px;
     font-family: "Signika Negative", helvetica, sans-serif;
   }
-  .apply-others:hover,
-  .apply-dev:hover {
+  .connect__hired a:hover {
     cursor: pointer;
     text-shadow: 0px 0px 5px #4cc3db;
   }

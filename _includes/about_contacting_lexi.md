@@ -1,17 +1,15 @@
-Reach out to me at one of the following addresses: 
-
-<div class="two-thirds">
-<h3>lexilewtan@email.net</h3>
-<h3>lexilewtan@work.com </h3>
+<div class="connect__email">
+	<h3>Email</h3>
+	<p>
+		<a class="apply-others">lexilewtan@gmail.com</a>
+		<a class="apply-dev">lexi@hired.com</a>
+	</p>
 </div>
 
-<div class="one-third">
+<div class="connect__hired">
 	<h3>Contact me about Hired</h3>
-<div class="half">
-<a class="apply-others">Candidate</a>
-</div>
-
-<div class="half">
-<a class="apply-dev">Company</a>
-</div>
+	<p>
+		<a class="apply-others">Candidate</a>
+		<a class="apply-dev">Company</a>
+	</p>
 </div>
