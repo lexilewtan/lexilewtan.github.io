@@ -617,14 +617,15 @@ body {
   .section-header {
     padding: 1em;
   }
-  #follow-section a {
-    margin-bottom: 2em;
-  }
   #follow-section .input-tiny-type-email {
     width: 60%;
   }
   #follow-section .tiny-letter-button {
     width: 40%;
+  }
+  .connect__email a,
+  .connect__hired a {
+    margin-bottom: .5em;
   }
 }
 @media print {
