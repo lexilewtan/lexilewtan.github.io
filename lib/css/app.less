@@ -7,30 +7,99 @@
 }
 body {
 	background-color: @mainBackground;
-	background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
-	background-size: cover;
 	color: #aaa;
 }
 
-.name-overlay {
-	//background: url(/lib/img/ll-overlay-b-g.png) center center no-repeat;
+// header
+.name {
+	font-family: @ostBold;
+	color: #eee;
+
 }
-section {
-	//background-color: #222;
+.tag {
+	font-family: @ostBold;
+	color: @purple;
+
 }
-.personal-name {
+.page-header {
+	.clearfix;
 	text-align: center;
-	font-family: @ostRegular;
+}
+
+.announcements {
+	width: 100%;
+	background: @mainBackground url("/lib/img/pattern-t.png") center center repeat;
+	border-bottom: 3px solid @teal;
+	text-align: center;
 	color: white;
-	opacity: 0;
 }
-.personality {
-	.fancy;
-	text-align: center;
-	color: @teal;
-	letter-spacing: .05em;
+
+.main-section {
+	border-top: 3px solid @teal;
+	.clearfix;
 }
-.lexibot {
-	float: left;
-	margin-top: .5em;
+.section-header {
+	h2 {
+		text-align: right;
+		font-family: @ostRegular;
+		text-transform: uppercase;
+		color: #888;
+	}
+
+}
+#follow-section {
+	a {
+		.button(@orchid);
+		font-size: 1.5rem;
+	}
+}
+
+#follow-section {
+	.tiny-letter {
+		.clearfix;
+		fieldset {
+			.clearfix;
+			border: none;
+		}
+	}
+
+	.tiny-letter-name {
+		font-family: futura;
+		font-style: normal;
+	}
+
+	.input-tiny-type-email {
+		padding: 0.01em;
+		float: left;
+		border: none;
+		background: none;
+		border-bottom: 1px solid @teal;
+		font-size: 125%;
+		color: white;
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid #ccc;
+		}
+	}
+	.tiny-letter-button {
+		.button();
+		font-size: 1.5rem;
+		position: relative;
+		top: -0.75em;
+	}
+	label {
+		font-size: 125%;
+		font-style: italic;
+	}
+}
+
+.connect__email {
+	a {
+		.button(@orchid);
+	}
+}
+.connect__hired {
+	a {
+		.button;
+	}
 }

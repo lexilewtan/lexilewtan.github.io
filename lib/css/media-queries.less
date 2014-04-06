@@ -1,20 +1,12 @@
-
-
 // larger than phone
 @media only screen and(min-width: 40em) {
+	body {
+		background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
+		background-size: cover;
+	}
 	.container-outer {
 		width: 100%;
 		margin: auto;
-	
-	}
-	.container-break {
-		width: 130%;
-		margin: auto;
-		background-color: @teal;
-		color: @teal;
-		margin-left: -33%;
-		text-align: center;
-		padding: 5em 0;
 	}
 	.container-inner {
 		width: 60%;
@@ -28,15 +20,14 @@
 
 	// HEADER
 
+	
 	.name {
-		font: 8em @ostBold;
-		color: #eee;
+		font-size: 8em;
 		text-align: left;
 		float: left;
 	}
 	.tag {
-		font: 5em @ostBold;
-		color: @purple;
+		font-size: 5em;
 		float: right;
 	}
 
@@ -47,27 +38,11 @@
 		text-align: center;
 	}
 
-	.personal-name {
-		margin: 0;
-		opacity: 0;
-		font-size: 9em;
-	}
-	.personality {
-		font-size: 4em;
-		margin: 0;
-		margin-bottom: .75em;
-	}
-
 
 
 
 
 	.announcements {
-		width: 100%;
-		background-color: @mainBackground;
-		background: @mainBackground url("/lib/img/pattern-t.png") center center repeat;
-		border-bottom: 3px solid @teal;
-		text-align: center;
 		position: fixed;
 		color: white;
 		font-size: 66%;
@@ -89,11 +64,7 @@
 		background: -ms-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6222222', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-		
-		
-		border-top: 3px solid @teal;
 		padding-bottom: 5em;
-		.clearfix;
 		&:hover {
 			background-color: rgba(35,29,38,.85);
 			//opacity: 1;
@@ -112,28 +83,21 @@
 		h2 {
 			padding: 2em 0 0.5em;
 			font-size: 2.5em;
-			text-align: right;
-			font-family: @ostRegular;
-			font-weight: 600;
-			text-transform: uppercase;
-			//letter-spacing: .25em;
-			color: #888;
 		}
 	}
 	em {
 		font-size:  2.6rem;
 		.fadeIn(color);
-		line-height: 1;
-		font-family: @ostRegular;
-		font-weight: 200;
-		font-style: normal;
-		background: @purple;
-		color: @teal;
-		text-align: center;
 		padding: .25em 0 0;
 	}
 
 	#about-section {
+		.lexibot {
+			float: left;
+			margin-top: .5em;
+		}
+		
+		// TIMELINE STUFF
 		blockquote {
 			margin-top: 2.75rem;
 			p {
@@ -169,123 +133,26 @@
 		}
 	}
 	#follow-section {
-	//	background: url("/lib/img/pattern-t.png") center center repeat;
-	
 		h3 {
 			margin-bottom: 0.5em;
 		}
-		a {
-			.button;
-			font-size: 1.5rem;
-			&:nth-child(n+1) {
-				.button(@orchid);
-			}
-		}
-		.tiny-letter {
-			.clearfix;
-			fieldset {
-				.clearfix;
-				border: none;
-			}
-		}
-
-		.tiny-letter-name {
-			font-family: futura;
-			font-style: normal;
-		}
-	
 		.input-tiny-type-email {
-			padding: 0.01em;
-			float: left;
-			border: none;
-			background: none;
-			border-bottom: 1px solid @teal;
 			width: 75%;
-			font-size: 125%;
-			color: white;
-			&:focus {
-				outline: none;
-				border-bottom: 1px solid #ccc;
-			}
 		}
 		.tiny-letter-button {
-			.button();
-			font-size: 1.5rem;
 			width: 25%;
-			position: relative;
-			top: -0.75em;
-		}
-		label {
-			font-size: 125%;
-			font-style: italic;
 		}
 	}
 
-	#mission-section {
-		//background: #333;
-		h1 {
-			clear: both;
-			text-align: center;
-			line-height: 1;
-		}
-	}
-	.mission-blurb {
-		border-right: @hairline;
-		border-bottom: @hairline;
-		padding: 0 1em 1em 0;
-		margin: 0 1em 1em 0;
-	}
-	.mission-future {
-		border-top: @hairline;
-		border-left: @hairline;
-		padding: 1em 0 0 1em;
-		margin: 1em 0 0 1em;
-	}
 	
 	.connect__email {
 		.two-thirds;
-		a {
-			.button(@orchid);
-		}
 	}
 	.connect__hired {
 		.one-third;
-		a {
-			.button;
-		}
 	}
 
 	
-
-	//	#work-section {
-	//		border-top: 3px solid @work-color;
-	//		.section-header {
-	//			color: @work-color;
-	//		}
-	//		a:link, a:visited, a:active {
-	//			color: @work-color;
-	//		}
-	//		.container-inner {
-	//			margin-top: 2em;
-	//		}
-	//	}
-	//	
-	//	#connect-section {
-	//		border-top: 3px solid @connect-color;
-	//		.section-header {
-	//			color: @connect-color;
-	//		}
-	//		a:link, a:visited, a:active {
-	//			color: @connect-color;
-	//		}
-	//		
-	//	}
-
-
-	#connect-section {
-		//background: url(http://subtlepatterns.com/patterns/zwartevilt.png);
-
-	}
 
 
 	
@@ -306,28 +173,27 @@
 
 // iphone
 @media only screen and (max-width: 35em) {
+
 	.container-outer {
 		width: 100%;
 	}
-	.container-inner {
+	.container-inner, .container-middle {
 		width: 100%;
 		padding: 1em;
 	}
-	#follow-section {
-		display: none; //temp
-	}
-	
 	.page-header {
-		background-color: #ffe8ff;
+		background-color: @orchid;
 	}
-	.name-overlay {
-		background-size: 175%;
-		height: 10em;
+	.section-header {
+		padding: 1em;
 	}
-
-	.personality {
-		font-size: 2em;
-		margin-top: 1em;
+	#follow-section {
+		.input-tiny-type-email {
+			width: 60%;
+		}
+		.tiny-letter-button {
+			width: 40%;
+		}
 	}
 }
 
