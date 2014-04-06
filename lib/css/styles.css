@@ -20,9 +20,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.fancy {
-  font-family: "Signika Negative", helvetica, sans-serif;
-}
 /* -- FLUID GRID STYLES -- */
 .grid {
   margin-bottom: 40px;
@@ -95,20 +92,17 @@ h6 {
   font-weight: normal;
   line-height: 1.25;
   margin-bottom: .1em;
+  font-family: "OstrichSansRegular";
+  text-transform: uppercase;
 }
 h1 {
-  font-family: "OstrichSansRegular";
   font-size: 2.5em;
-  text-transform: uppercase;
-  font-weight: 300;
 }
 h2 {
   font-size: 2.0em;
-  font-family: "OstrichSansBold";
 }
 h3 {
   font-size: 1.75em;
-  font-family: "OstrichSansBlack";
 }
 h4 {
   font-size: 1.25em;
@@ -197,8 +191,8 @@ body {
   color: #8e00d1;
   text-decoration: none;
   background: none;
-  padding: 2px 3px 1px;
-  border: 1px solid #8e00d1;
+  padding: 5px 5px 3px;
+  border: 3px solid #8e00d1;
   text-transform: uppercase;
   -webkit-transition: text-shadow 0.5s ease-in-out;
   -moz-transition: text-shadow 0.5s ease-in-out;
@@ -235,8 +229,8 @@ body {
   color: #8e00d1;
   text-decoration: none;
   background: none;
-  padding: 2px 3px 1px;
-  border: 1px solid #8e00d1;
+  padding: 5px 5px 3px;
+  border: 3px solid #8e00d1;
   text-transform: uppercase;
   -webkit-transition: text-shadow 0.5s ease-in-out;
   -moz-transition: text-shadow 0.5s ease-in-out;
@@ -285,20 +279,20 @@ body {
   float: left;
   border: none;
   background: none;
-  border-bottom: 1px solid #208ba1;
+  border-bottom: 3px solid #208ba1;
   font-size: 125%;
   color: white;
 }
 #follow-section .input-tiny-type-email:focus {
   outline: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid #ccc;
 }
 #follow-section .tiny-letter-button {
   color: #208ba1;
   text-decoration: none;
   background: none;
-  padding: 2px 3px 1px;
-  border: 1px solid #208ba1;
+  padding: 5px 5px 3px;
+  border: 3px solid #208ba1;
   text-transform: uppercase;
   -webkit-transition: text-shadow 0.5s ease-in-out;
   -moz-transition: text-shadow 0.5s ease-in-out;
@@ -309,7 +303,7 @@ body {
   font-family: "Signika Negative", helvetica, sans-serif;
   font-size: 1.5rem;
   position: relative;
-  top: -0.75em;
+  top: -24px;
 }
 #follow-section .tiny-letter-button:hover {
   cursor: pointer;
@@ -324,8 +318,8 @@ body {
   color: #8e00d1;
   text-decoration: none;
   background: none;
-  padding: 2px 3px 1px;
-  border: 1px solid #8e00d1;
+  padding: 5px 5px 3px;
+  border: 3px solid #8e00d1;
   text-transform: uppercase;
   -webkit-transition: text-shadow 0.5s ease-in-out;
   -moz-transition: text-shadow 0.5s ease-in-out;
@@ -343,8 +337,8 @@ body {
   color: #208ba1;
   text-decoration: none;
   background: none;
-  padding: 2px 3px 1px;
-  border: 1px solid #208ba1;
+  padding: 5px 5px 3px;
+  border: 3px solid #208ba1;
   text-transform: uppercase;
   -webkit-transition: text-shadow 0.5s ease-in-out;
   -moz-transition: text-shadow 0.5s ease-in-out;
@@ -358,18 +352,13 @@ body {
   cursor: pointer;
   text-shadow: 0px 0px 5px #4cc3db;
 }
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 35em) {
   body {
     background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
     background-size: cover;
   }
-  .container-outer {
-    width: 100%;
-    margin: auto;
-  }
-  .container-inner {
-    width: 60%;
-    margin: auto;
+  h3 {
+    font-family: "OstrichSansBold";
   }
   .container-middle {
     width: 80%;
@@ -384,16 +373,20 @@ body {
   .announcements p {
     margin: 0;
   }
+  .name,
+  .tag {
+    width: 50%;
+    line-height: 1;
+  }
   .name {
     font-family: "OstrichSansBold";
-    font-size: 8em;
     text-align: left;
     float: left;
   }
   .tag {
     font-family: "OstrichSansBold";
-    font-size: 5em;
     float: right;
+    text-align: right;
   }
   .page-header {
     *zoom: 1;
@@ -514,6 +507,67 @@ body {
     width: 33%;
   }
 }
+@media only screen and (min-width: 70em) {
+  .container-outer {
+    width: 100%;
+    margin: auto;
+  }
+  .container-inner {
+    width: 60%;
+    margin: auto;
+  }
+  .name {
+    font-size: 7.5em;
+  }
+  .tag {
+    font-size: 5em;
+  }
+}
+@media only screen and (max-width: 70em) and (min-width: 35em) {
+  .container-inner {
+    width: 80%;
+    margin: auto;
+  }
+  .main-section {
+    font-size: 80%;
+  }
+  #follow-section .input-tiny-type-email {
+    width: 66%;
+  }
+  #follow-section .tiny-letter-button {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 50em) and (max-width: 70em) {
+  .name {
+    font-size: 5em;
+  }
+  .tag {
+    font-size: 3em;
+  }
+  #follow-section h3 {
+    margin: 0;
+    margin-top: 1em;
+  }
+  #follow-section .half + .half {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 35em) and (max-width: 50em) {
+  .name {
+    font-size: 3em;
+  }
+  .tag {
+    font-size: 2em;
+  }
+  #follow-section h3 {
+    margin: 0;
+    margin-top: 1em;
+  }
+  #follow-section .half {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 35em) {
   .announcements a,
   #follow-section a,
@@ -544,8 +598,14 @@ body {
   .page-header {
     background-color: #8e00d1;
   }
+  .name {
+    font-size: 3em;
+  }
+  .tag {
+    font-size: 2em;
+  }
   .main-section {
-    font-size: 75%;
+    font-size: 66%;
   }
   .main-section em {
     font-size: 200%;

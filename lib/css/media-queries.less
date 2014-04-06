@@ -1,25 +1,16 @@
 // larger than phone
-@media only screen and(min-width: 40em) {
+@media only screen and(min-width: 35em) {
 	body {
 		background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
 		background-size: cover;
 	}
-	
-	// CONTAINERS
-	.container-outer {
-		width: 100%;
-		margin: auto;
-	}
-	.container-inner {
-		width: 60%;
-		margin: auto;
+	h3 {
+		font-family: @ostBold;
 	}
 	.container-middle {
 		width: 80%;
 		margin: auto;
 	}
-	
-
 	// HEADER
 	.announcements {
 		position: fixed;
@@ -30,16 +21,19 @@
 			margin: 0;
 		}
 	}
+	.name, .tag {
+		width: 50%;
+		line-height: 1;
+	}
 	.name {
 		font-family: @ostBold;
-		font-size: 8em;
 		text-align: left;
 		float: left;
 	}
 	.tag {
 		font-family: @ostBold;
-		font-size: 5em;
 		float: right;
+		text-align: right;
 	}
 	.page-header {
 		.clearfix;
@@ -142,16 +136,74 @@
 		.one-third;
 	}
 }
+@media only screen and (min-width: 70em) {
+	// CONTAINERS
+	.container-outer {
+		width: 100%;
+		margin: auto;
+	}
+	.container-inner {
+		width: 60%;
+		margin: auto;
+	}
+	.name {
+		font-size: 7.5em;
+	}
+	.tag {
+		font-size: 5em;
+	}
+}
+@media only screen and (max-width: 70em) and (min-width: 35em) {
+	.container-inner {
+		width: 80%;
+		margin: auto;
+	}
+	.main-section {
+		font-size: 80%;
+	}
+	#follow-section {
+		.input-tiny-type-email {
+			width: 66%;
+		}
+		.tiny-letter-button {
+			width: 33%;
+		}
+	}
+}
 
 @media only screen and (min-width: 50em) and (max-width: 70em) {
-	.container-outer {
-
+	.name {
+		font-size: 5em;
+	}
+	.tag {
+		font-size: 3em;
+	}
+	#follow-section {
+		h3 {
+			margin: 0;
+			margin-top:1em;
+		}
+		.half + .half {
+			width: 100%;
+		}
 	}
 }
 
 @media only screen and (min-width: 35em) and (max-width: 50em) {
-	.container-outer {
-
+	.name {
+		font-size: 3em;
+	}
+	.tag {
+		font-size: 2em;
+	}
+	#follow-section {
+		h3 {
+			margin: 0;
+			margin-top:1em;
+		}
+		.half {
+			width: 100%;
+		}
 	}
 }
 
@@ -186,8 +238,14 @@
 	.page-header {
 		background-color: @orchid;
 	}
+	.name {
+		font-size: 3em;
+	}
+	.tag {
+		font-size: 2em;
+	}
 	.main-section {
-		font-size: 75%;
+		font-size: 66%;
 		em {
 			font-size: 200%;
 		}
@@ -202,7 +260,6 @@
 		a {
 			margin-bottom: 2em;
 		}
-		
 		.input-tiny-type-email {
 			width: 60%;
 		}
