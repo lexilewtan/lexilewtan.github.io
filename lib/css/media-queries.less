@@ -20,36 +20,33 @@
 		width: 60%;
 		margin: auto;
 	}
-	.main-section {
-		.fadeIn;
-		opacity: .25;
+	.container-middle {
+		width: 80%;
+		margin: auto;
 	}
 	
-	
-	
-	
-	
-	
-
 
 	// HEADER
 
+	.name {
+		font: 8em @ostBold;
+		color: #eee;
+		text-align: left;
+		float: left;
+	}
+	.tag {
+		font: 5em @ostBold;
+		color: @purple;
+		float: right;
+	}
 
 	.page-header {
-		background: url("../img/bg-px-soft3.png") top right no-repeat fixed;
-		background-size: cover;
-		min-height: 20em;
-	}
-	.name-overlay {
-		background-size: cover;
-		min-height: 25em;
+		.clearfix;
+		padding: 5em 0 0;
 		position: relative;
+		text-align: center;
 	}
-	.personal-info {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
+
 	.personal-name {
 		margin: 0;
 		opacity: 0;
@@ -62,31 +59,6 @@
 	}
 
 
-	
-
-
-	.jump-button-bar {
-		li {
-			display: inline-block; 
-			float: left; 
-			width: 20%;
-			font-size: 1em;
-			font-family: @ostRegular;
-			text-align: center;
-		
-			a {
-				text-decoration: none;
-				color: #888;
-				opacity: .5;
-				padding: 1em;
-				.fadeIn();
-				&:hover {
-					opacity: 1;
-					border-bottom: 3px solid @orchid;
-				}
-			}
-		}
-	}
 
 
 
@@ -106,22 +78,38 @@
 			.button(@orchid);
 		}
 	}
-
-
+	
 	.main-section {
+		.fadeIn(background-color);
+		background: -moz-linear-gradient(top,  rgba(35,29,38,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,29,38,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6222222', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+		
+		
 		border-top: 3px solid @teal;
 		padding-bottom: 5em;
 		.clearfix;
 		&:hover {
-			opacity: 1;
+			background-color: rgba(35,29,38,.85);
+			//opacity: 1;
+			
+			em {
+				color: white;
+				background-color: #222;
+			}
 		}
 		h2 {
 			text-align: right;
 		}
 	}
 	.section-header {
+		.container-middle;
 		h2 {
-			padding: 2em 2em 0 0;
+			padding: 2em 0 0.5em;
 			font-size: 2.5em;
 			text-align: right;
 			font-family: @ostRegular;
@@ -133,6 +121,7 @@
 	}
 	em {
 		font-size:  2.75rem;
+		.fadeIn(color);
 		line-height: 1;
 		font-family: @ostRegular;
 		font-weight: 200;
@@ -178,7 +167,7 @@
 		}
 	}
 	#follow-section {
-		background: url("/lib/img/pattern-t.png") center center repeat;
+	//	background: url("/lib/img/pattern-t.png") center center repeat;
 	}
 
 	#mission-section {
@@ -206,7 +195,6 @@
 	.tiny-letter {
 		padding: 2em;
 		background: @teal;
-		margin-right: 5em;
 		.clearfix;
 		color: @darkGrey;
 		fieldset {

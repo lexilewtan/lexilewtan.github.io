@@ -164,10 +164,9 @@ a:hover {
 }
 body {
   background-color: #222222;
+  background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
+  background-size: cover;
   color: #aaa;
-}
-.name-overlay {
-  background: url(/lib/img/ll-overlay-b-g.png) center center no-repeat;
 }
 .personal-name {
   text-align: center;
@@ -203,28 +202,35 @@ body {
     width: 60%;
     margin: auto;
   }
-  .main-section {
-    -webkit-transition: opacity 0.75s ease-in-out;
-    -moz-transition: opacity 0.75s ease-in-out;
-    -ms-transition: opacity 0.75s ease-in-out;
-    -o-transition: opacity 0.75s ease-in-out;
-    transition: opacity 0.75s ease-in-out;
-    opacity: .25;
+  .container-middle {
+    width: 80%;
+    margin: auto;
+  }
+  .name {
+    font: 8em "OstrichSansBold";
+    color: #eee;
+    text-align: left;
+    float: left;
+  }
+  .tag {
+    font: 5em "OstrichSansBold";
+    color: #370051;
+    float: right;
   }
   .page-header {
-    background: url("../img/bg-px-soft3.png") top right no-repeat fixed;
-    background-size: cover;
-    min-height: 20em;
-  }
-  .name-overlay {
-    background-size: cover;
-    min-height: 25em;
+    *zoom: 1;
+    padding: 5em 0 0;
     position: relative;
+    text-align: center;
   }
-  .personal-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .page-header:before,
+  .page-header:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .page-header:after {
+    clear: both;
   }
   .personal-name {
     margin: 0;
@@ -235,29 +241,6 @@ body {
     font-size: 4em;
     margin: 0;
     margin-bottom: .75em;
-  }
-  .jump-button-bar li {
-    display: inline-block;
-    float: left;
-    width: 20%;
-    font-size: 1em;
-    font-family: "OstrichSansRegular";
-    text-align: center;
-  }
-  .jump-button-bar li a {
-    text-decoration: none;
-    color: #888;
-    opacity: .5;
-    padding: 1em;
-    -webkit-transition: opacity 0.75s ease-in-out;
-    -moz-transition: opacity 0.75s ease-in-out;
-    -ms-transition: opacity 0.75s ease-in-out;
-    -o-transition: opacity 0.75s ease-in-out;
-    transition: opacity 0.75s ease-in-out;
-  }
-  .jump-button-bar li a:hover {
-    opacity: 1;
-    border-bottom: 3px solid #8e00d1;
   }
   .announcements {
     width: 100%;
@@ -292,6 +275,25 @@ body {
     text-shadow: 0px 0px 5px #bf38ff;
   }
   .main-section {
+    -webkit-transition: background-color 0.75s ease-in-out;
+    -moz-transition: background-color 0.75s ease-in-out;
+    -ms-transition: background-color 0.75s ease-in-out;
+    -o-transition: background-color 0.75s ease-in-out;
+    transition: background-color 0.75s ease-in-out;
+    background: -moz-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 29, 38, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6222222', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
     border-top: 3px solid #208ba1;
     padding-bottom: 5em;
     *zoom: 1;
@@ -306,13 +308,21 @@ body {
     clear: both;
   }
   .main-section:hover {
-    opacity: 1;
+    background-color: rgba(35, 29, 38, 0.85);
+  }
+  .main-section:hover em {
+    color: white;
+    background-color: #222;
   }
   .main-section h2 {
     text-align: right;
   }
+  .section-header {
+    width: 80%;
+    margin: auto;
+  }
   .section-header h2 {
-    padding: 2em 2em 0 0;
+    padding: 2em 0 0.5em;
     font-size: 2.5em;
     text-align: right;
     font-family: "OstrichSansRegular";
@@ -322,6 +332,11 @@ body {
   }
   em {
     font-size: 2.75rem;
+    -webkit-transition: color 0.75s ease-in-out;
+    -moz-transition: color 0.75s ease-in-out;
+    -ms-transition: color 0.75s ease-in-out;
+    -o-transition: color 0.75s ease-in-out;
+    transition: color 0.75s ease-in-out;
     line-height: 1;
     font-family: "OstrichSansRegular";
     font-weight: 200;
@@ -364,9 +379,6 @@ body {
   #about-section blockquote p:last-child:before {
     border-color: #57068c;
   }
-  #follow-section {
-    background: url("/lib/img/pattern-t.png") center center repeat;
-  }
   #mission-section h1 {
     clear: both;
     text-align: center;
@@ -387,7 +399,6 @@ body {
   .tiny-letter {
     padding: 2em;
     background: #208ba1;
-    margin-right: 5em;
     *zoom: 1;
     color: #242226;
   }
