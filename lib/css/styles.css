@@ -168,11 +168,9 @@ body {
   color: #aaa;
 }
 .name {
-  font-family: "OstrichSansBold";
   color: #eee;
 }
 .tag {
-  font-family: "OstrichSansBold";
   color: #370051;
 }
 .page-header {
@@ -194,6 +192,25 @@ body {
   border-bottom: 3px solid #208ba1;
   text-align: center;
   color: white;
+}
+.announcements a {
+  color: #8e00d1;
+  text-decoration: none;
+  background: none;
+  padding: 2px 3px 1px;
+  border: 1px solid #8e00d1;
+  text-transform: uppercase;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+  border-radius: 3px;
+  font-family: "Signika Negative", helvetica, sans-serif;
+}
+.announcements a:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #bf38ff;
 }
 .main-section {
   border-top: 3px solid #208ba1;
@@ -298,9 +315,10 @@ body {
   cursor: pointer;
   text-shadow: 0px 0px 5px #4cc3db;
 }
-#follow-section label {
-  font-size: 125%;
+#follow-section .label {
+  font: 75% "Signika Negative", helvetica, sans-serif;
   font-style: italic;
+  display: inline;
 }
 .connect__email a {
   color: #8e00d1;
@@ -357,12 +375,23 @@ body {
     width: 80%;
     margin: auto;
   }
+  .announcements {
+    position: fixed;
+    color: white;
+    font-size: 66%;
+    z-index: 10;
+  }
+  .announcements p {
+    margin: 0;
+  }
   .name {
+    font-family: "OstrichSansBold";
     font-size: 8em;
     text-align: left;
     float: left;
   }
   .tag {
+    font-family: "OstrichSansBold";
     font-size: 5em;
     float: right;
   }
@@ -380,34 +409,6 @@ body {
   }
   .page-header:after {
     clear: both;
-  }
-  .announcements {
-    position: fixed;
-    color: white;
-    font-size: 66%;
-    z-index: 10;
-  }
-  .announcements p {
-    margin: 0;
-  }
-  .announcements a {
-    color: #8e00d1;
-    text-decoration: none;
-    background: none;
-    padding: 2px 3px 1px;
-    border: 1px solid #8e00d1;
-    text-transform: uppercase;
-    -webkit-transition: text-shadow 0.5s ease-in-out;
-    -moz-transition: text-shadow 0.5s ease-in-out;
-    -ms-transition: text-shadow 0.5s ease-in-out;
-    -o-transition: text-shadow 0.5s ease-in-out;
-    transition: text-shadow 0.5s ease-in-out;
-    border-radius: 3px;
-    font-family: "Signika Negative", helvetica, sans-serif;
-  }
-  .announcements a:hover {
-    cursor: pointer;
-    text-shadow: 0px 0px 5px #bf38ff;
   }
   .main-section {
     -webkit-transition: background-color 0.75s ease-in-out;
@@ -514,6 +515,24 @@ body {
   }
 }
 @media only screen and (max-width: 35em) {
+  .announcements a,
+  #follow-section a,
+  #connect-section a {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .announcements {
+    font-size: 75%;
+  }
+  .announcements p:before {
+    content: "Latest: ";
+    color: #aaa;
+    font-size: 75%;
+  }
+  .announcements a {
+    margin: 0 1em 1em;
+  }
   .container-outer {
     width: 100%;
   }
@@ -525,8 +544,21 @@ body {
   .page-header {
     background-color: #8e00d1;
   }
+  .main-section {
+    font-size: 75%;
+  }
+  .main-section em {
+    font-size: 200%;
+  }
+  .lexibot {
+    float: left;
+    width: 50%;
+  }
   .section-header {
     padding: 1em;
+  }
+  #follow-section a {
+    margin-bottom: 2em;
   }
   #follow-section .input-tiny-type-email {
     width: 60%;
@@ -541,6 +573,13 @@ body {
   }
   img {
     max-width: 100% !important;
+  }
+  .lexibot {
+    display: block;
+  }
+  .announcements,
+  #follow-section {
+    display: none;
   }
   body {
     font-size: 12pt;

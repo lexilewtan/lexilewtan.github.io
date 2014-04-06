@@ -4,6 +4,8 @@
 		background: url("../img/bg-px-soft3.png") top left no-repeat fixed;
 		background-size: cover;
 	}
+	
+	// CONTAINERS
 	.container-outer {
 		width: 100%;
 		margin: auto;
@@ -19,29 +21,6 @@
 	
 
 	// HEADER
-
-	
-	.name {
-		font-size: 8em;
-		text-align: left;
-		float: left;
-	}
-	.tag {
-		font-size: 5em;
-		float: right;
-	}
-
-	.page-header {
-		.clearfix;
-		padding: 5em 0 0;
-		position: relative;
-		text-align: center;
-	}
-
-
-
-
-
 	.announcements {
 		position: fixed;
 		color: white;
@@ -50,11 +29,26 @@
 		p {
 			margin: 0;
 		}
-		a {
-			.button(@orchid);
-		}
 	}
-	
+	.name {
+		font-family: @ostBold;
+		font-size: 8em;
+		text-align: left;
+		float: left;
+	}
+	.tag {
+		font-family: @ostBold;
+		font-size: 5em;
+		float: right;
+	}
+	.page-header {
+		.clearfix;
+		padding: 5em 0 0;
+		position: relative;
+		text-align: center;
+	}
+
+	// SECTIONS
 	.main-section {
 		.fadeIn(background-color);
 		background: -moz-linear-gradient(top,  rgba(35,29,38,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
@@ -67,11 +61,8 @@
 		padding-bottom: 5em;
 		&:hover {
 			background-color: rgba(35,29,38,.85);
-			//opacity: 1;
-			
 			em {
 				color: #eee;
-				//background-color: #222;
 			}
 		}
 		h2 {
@@ -144,19 +135,12 @@
 		}
 	}
 
-	
 	.connect__email {
 		.two-thirds;
 	}
 	.connect__hired {
 		.one-third;
 	}
-
-	
-
-
-	
-	
 }
 
 @media only screen and (min-width: 50em) and (max-width: 70em) {
@@ -174,6 +158,24 @@
 // iphone
 @media only screen and (max-width: 35em) {
 
+	.announcements a, #follow-section a, #connect-section a {
+		display: block;
+		text-align: center;
+		font-size: 1.25rem;
+	}
+	.announcements {
+		font-size: 75%;
+	    p {
+	   		&:before {
+	   			content: "Latest: ";
+	   			color: #aaa;
+	   			font-size: 75%;
+	   		}
+		}
+		a {
+			margin: 0 1em 1em;
+		}
+	}
 	.container-outer {
 		width: 100%;
 	}
@@ -184,10 +186,23 @@
 	.page-header {
 		background-color: @orchid;
 	}
+	.main-section {
+		font-size: 75%;
+		em {
+			font-size: 200%;
+		}
+	}
+	.lexibot {
+		.half;
+	}
 	.section-header {
 		padding: 1em;
 	}
 	#follow-section {
+		a {
+			margin-bottom: 2em;
+		}
+		
 		.input-tiny-type-email {
 			width: 60%;
 		}
@@ -202,6 +217,12 @@
 @media print {
 	@page { margin: 0.5in; }
 	img { max-width: 100% !important; }
+	.lexibot {
+		display: block;
+	}
+	.announcements, #follow-section {
+		display: none;
+	}
 	body {
 		font-size: 12pt;
 	}

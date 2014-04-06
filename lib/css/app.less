@@ -12,14 +12,10 @@ body {
 
 // header
 .name {
-	font-family: @ostBold;
 	color: #eee;
-
 }
 .tag {
-	font-family: @ostBold;
 	color: @purple;
-
 }
 .page-header {
 	.clearfix;
@@ -32,6 +28,9 @@ body {
 	border-bottom: 3px solid @teal;
 	text-align: center;
 	color: white;
+	a {
+		.button(@orchid);
+	}
 }
 
 .main-section {
@@ -87,9 +86,10 @@ body {
 		position: relative;
 		top: -0.75em;
 	}
-	label {
-		font-size: 125%;
+	.label {
+		font: 75% @sans;
 		font-style: italic;
+		display: inline;
 	}
 }
 
