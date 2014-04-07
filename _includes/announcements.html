@@ -1,8 +1,8 @@
 <div class="bar">
 	<div class="announcements">
-{% capture announcements %}
-  {% include announcements.md %}
+{% capture _announcements %}
+  {% include _announcements.md %}
 {% endcapture %}
-{{ announcements | unindent | markdownify }}
+{{ _announcements | unindent | markdownify }}
 	</div>
 </div>
