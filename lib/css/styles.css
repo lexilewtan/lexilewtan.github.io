@@ -260,21 +260,11 @@ body {
   border-color: #bf38ff;
   color: #bf38ff;
 }
-#follow-section .tiny-letter {
-  *zoom: 1;
-}
-#follow-section .tiny-letter:before,
-#follow-section .tiny-letter:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-#follow-section .tiny-letter:after {
-  clear: both;
-}
 #follow-section .tiny-letter fieldset {
   *zoom: 1;
   border: none;
+  position: relative;
+  padding-top: .05em;
 }
 #follow-section .tiny-letter fieldset:before,
 #follow-section .tiny-letter fieldset:after {
@@ -285,17 +275,13 @@ body {
 #follow-section .tiny-letter fieldset:after {
   clear: both;
 }
-#follow-section .tiny-letter-name {
-  font-family: futura;
-  font-style: normal;
-}
 #follow-section .input-tiny-type-email {
-  padding: 0.01em;
+  padding: 0.5em 0 .05em;
   float: left;
   border: none;
   background: none;
   border-bottom: 3px solid #208ba1;
-  font-size: 110%;
+  font-size: 1.25rem;
   color: white;
 }
 #follow-section .input-tiny-type-email:focus {
@@ -317,8 +303,8 @@ body {
   -o-transition: color 0.75s, border-color 0.75s;
   transition: color 0.75s, border-color 0.75s;
   font-size: 1.25rem;
-  position: relative;
-  top: -24px;
+  position: absolute;
+  bottom: 0;
 }
 #follow-section .tiny-letter-button:hover {
   cursor: pointer;
@@ -328,6 +314,7 @@ body {
 #follow-section .label {
   font: 75% "Signika Negative", helvetica, sans-serif;
   font-style: italic;
+  text-transform: none;
   display: inline;
 }
 .connect__email a {
@@ -391,19 +378,20 @@ body {
   .announcements p {
     margin: 0;
   }
-  .name,
-  .tag {
-    line-height: 1;
-  }
   .name {
+    line-height: 1;
     font-family: "OstrichSansBold";
     text-align: left;
     float: left;
   }
-  .tag {
-    font-family: "OstrichSansBold";
-    float: right;
-    text-align: right;
+  .t-fix {
+    margin-left: .05em;
+  }
+  .a-fix {
+    margin-left: -0.1em;
+  }
+  .n-fix {
+    margin-left: .025em;
   }
   .page-header {
     *zoom: 1;
@@ -573,6 +561,15 @@ body {
   }
 }
 @media only screen and (max-width: 35em) {
+  .t-fix {
+    margin-left: .05em;
+  }
+  .a-fix {
+    margin-left: -0.05em;
+  }
+  .n-fix {
+    margin-left: .03em;
+  }
   .announcements a,
   #follow-section a,
   #connect-section a {
@@ -623,12 +620,9 @@ body {
   #about-section .lexibot img {
     width: 40%;
   }
-  #follow-section .input-tiny-type-email {
-    margin-top: 1em;
-    width: 50%;
-  }
+  #follow-section .input-tiny-type-email,
   #follow-section .tiny-letter-button {
-    margin-top: 1em;
+    margin-top: .5em;
     width: 50%;
   }
   .connect__email a,

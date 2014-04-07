@@ -56,25 +56,21 @@ body {
 		font-size: 1.25rem;
 	}
 	.tiny-letter {
-		.clearfix;
 		fieldset {
 			.clearfix;
 			border: none;
+			position: relative;
+			padding-top: .05em;
 		}
 	}
 
-	.tiny-letter-name {
-		font-family: futura;
-		font-style: normal;
-	}
-
 	.input-tiny-type-email {
-		padding: 0.01em;
+		padding: 0.5em 0 .05em;
 		float: left;
 		border: none;
 		background: none;
 		border-bottom: 3px solid @teal;
-		font-size: 110%;
+		font-size: 1.25rem;
 		color: white;
 		&:focus {
 			outline: none;
@@ -84,12 +80,13 @@ body {
 	.tiny-letter-button {
 		.button();
 		font-size: 1.25rem;
-		position: relative;
-		top: -24px;
+		position: absolute;
+		bottom: 0;
 	}
 	.label {
 		font: 75% @sans;
 		font-style: italic;
+		text-transform: none;
 		display: inline;
 	}
 }
