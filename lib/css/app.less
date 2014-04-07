@@ -14,9 +14,6 @@ body {
 .name {
 	color: #eee;
 }
-.tag {
-	color: @purple;
-}
 .page-header {
 	.clearfix;
 	text-align: center;
@@ -39,21 +36,25 @@ body {
 }
 .section-header {
 	h2 {
-		text-align: right;
+		text-align: left;
 		font-family: @ostRegular;
 		text-transform: uppercase;
 		color: #888;
 	}
-
+}
+#about-section {
+	.lexibot {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
 }
 #follow-section {
 	a {
 		.button(@orchid);
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
-}
-
-#follow-section {
 	.tiny-letter {
 		.clearfix;
 		fieldset {
@@ -73,7 +74,7 @@ body {
 		border: none;
 		background: none;
 		border-bottom: 3px solid @teal;
-		font-size: 125%;
+		font-size: 110%;
 		color: white;
 		&:focus {
 			outline: none;
@@ -82,7 +83,7 @@ body {
 	}
 	.tiny-letter-button {
 		.button();
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		position: relative;
 		top: -24px;
 	}

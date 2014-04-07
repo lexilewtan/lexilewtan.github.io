@@ -36,17 +36,20 @@
 	color: @color;
 	text-decoration: none;
 	background: none;
-	padding: 5px 5px 3px;
+	padding: .05em .20em .025em;
 	border: 3px solid @color;
 	text-transform: uppercase;
-	.fadeIn(text-shadow, .5s);
 	border-radius: 3px;
 	font-family: @sans;
+	-webkit-transition: color .75s, border-color .75s;
+	-moz-transition: color .75s, border-color .75s;
+	-ms-transition: color .75s, border-color .75s;
+	-o-transition: color .75s, border-color .75s;
+	transition: color .75s, border-color .75s;
 	&:hover {
 		cursor: pointer;
-		//color: lighten(@color, 10%);
-		//border-color: lighten(@color, 10%);
-		text-shadow: 0px 0px 5px lighten(@color, 20%);
+		border-color: lighten(@color, 20%);
+		color: lighten(@color, 20%);
 	}
 }
 

@@ -9,7 +9,7 @@
 <div class="connect__hired">
 	<h3>Contact me about Hired</h3>
 	<p>
-		<a class="apply-others">Candidate</a>
-		<a class="apply-dev">Company</a>
+		<a class="apply-others">Looking for a Job</a>
+		<a class="apply-dev">Hire Top Tech Talent</a>
 	</p>
 </div>

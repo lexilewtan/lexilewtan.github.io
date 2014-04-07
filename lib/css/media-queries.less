@@ -22,7 +22,6 @@
 		}
 	}
 	.name, .tag {
-		width: 50%;
 		line-height: 1;
 	}
 	.name {
@@ -37,9 +36,6 @@
 	}
 	.page-header {
 		.clearfix;
-		padding: 5em 0 0;
-		position: relative;
-		text-align: center;
 	}
 
 	// SECTIONS
@@ -59,9 +55,6 @@
 				color: #eee;
 			}
 		}
-		h2 {
-			text-align: right;
-		}
 	}
 	.section-header {
 		.container-middle;
@@ -71,50 +64,22 @@
 		}
 	}
 	em {
-		font-size:  2.6rem;
 		.fadeIn(color);
-		padding: .25em 0 0;
+		padding: .25rem 0 0;
 	}
-
-	#about-section {
-		.lexibot {
-			float: left;
-			margin-top: .5em;
+	
+	.lexibot {
+		.one-fourth;
+		padding: 0;
+		text-align: center;
+		img {
+			max-width: 15em;
 		}
-		
-		// TIMELINE STUFF
-		blockquote {
-			margin-top: 2.75rem;
-			p {
-				border-top: @hairline;
-				padding-top: 1em;
-				position: relative;
-				&:before {
-					content: " ";
-					position: absolute;
-					top: 0;
-					margin-top: -0.275em;
-					width: 0.5em;
-					height: 0.5em;
-					border: 1px solid #444;
-					border-radius: 100px;
-					background: @darkGrey;
-				}
-				&:first-child {
-					&:before {
-						border-color: #f53d57; //betaworks
-					}
-					.one-third;
-					padding-right: 1em;
-				}
-				&:last-child {
-					&:before {
-						border-color: #57068c //nyu
-					}
-					.two-thirds;
-					
-				}
-			}
+	}
+	
+	#about-section {
+		p {
+			padding: 0 1em;
 		}
 	}
 	#follow-section {
@@ -129,11 +94,11 @@
 		}
 	}
 
-	.connect__email {
-		.two-thirds;
-	}
-	.connect__hired {
-		.one-third;
+	.connect__email, .connect__hired {
+		.half;
+		a {
+			display: inline-block;
+		}
 	}
 }
 @media only screen and (min-width: 70em) {
@@ -146,11 +111,14 @@
 		width: 60%;
 		margin: auto;
 	}
+	.page-header {
+		padding-top: 4.5em;
+	}
 	.name {
 		font-size: 7.5em;
 	}
-	.tag {
-		font-size: 5em;
+	em {
+		font-size: 2.6rem;
 	}
 }
 @media only screen and (max-width: 70em) and (min-width: 35em) {
@@ -169,6 +137,9 @@
 			width: 33%;
 		}
 	}
+	em {
+		font-size: 2rem;
+	}
 }
 
 @media only screen and (min-width: 50em) and (max-width: 70em) {
@@ -177,6 +148,9 @@
 	}
 	.tag {
 		font-size: 3em;
+	}
+	.page-header {
+		padding-top: 3.5em;
 	}
 	#follow-section {
 		h3 {
@@ -195,6 +169,18 @@
 	}
 	.tag {
 		font-size: 2em;
+	}
+	.page-header {
+		padding-top: 3em;
+	}
+	.lexibot {
+		width: 100%;
+	}
+	#about-section {
+		.three-fourths {
+			display: block;
+			width: 100%;
+		}
 	}
 	#follow-section {
 		h3 {
@@ -237,12 +223,14 @@
 	}
 	.page-header {
 		background-color: @orchid;
+		h1 {
+			padding-top: .125em;
+			margin: 0;
+			line-height: 1;
+		}
 	}
 	.name {
 		font-size: 3em;
-	}
-	.tag {
-		font-size: 2em;
 	}
 	.main-section {
 		font-size: 66%;
@@ -250,18 +238,25 @@
 			font-size: 200%;
 		}
 	}
-	.lexibot {
-		.half;
-	}
 	.section-header {
 		padding: 1em;
+		font-size: 125%;
+	}
+	#about-section {
+		.lexibot {
+			img {
+				width: 40%;
+			}
+		}
 	}
 	#follow-section {
 		.input-tiny-type-email {
-			width: 60%;
+			margin-top: 1em;
+			width: 50%;
 		}
 		.tiny-letter-button {
-			width: 40%;
+			margin-top: 1em;
+			width: 50%;
 		}
 	}
 	.connect__email a, .connect__hired a {
