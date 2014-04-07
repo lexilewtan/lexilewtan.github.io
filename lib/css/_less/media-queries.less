@@ -8,7 +8,7 @@
 		font-family: @ostBold;
 	}
 	.container-middle {
-		width: 80%;
+		width: 66%;
 		margin: auto;
 	}
 	// HEADER
@@ -24,8 +24,7 @@
 	.name {
 		line-height: 1;
 		font-family: @ostBold;
-		text-align: left;
-		float: left;
+		text-align: center;
 	}
 	.t-fix {
 		margin-left: .05em;
@@ -96,9 +95,10 @@
 		}
 	}
 
-	.connect__email, .connect__hired {
-		.half;
+	.connect__email, .connect__hired, .follow-lexi {
+		text-align: center;
 		a {
+			font-size: 150%;
 			display: inline-block;
 		}
 	}
@@ -159,9 +159,6 @@
 			margin: 0;
 			margin-top:1em;
 		}
-		.half + .half {
-			width: 100%;
-		}
 	}
 }
 
@@ -178,19 +175,17 @@
 	.lexibot {
 		width: 100%;
 	}
-	#about-section {
-		.three-fourths {
-			display: block;
-			width: 100%;
-		}
+	.half {
+		width: 100%;
+		display: block;
+		margin-bottom: 1em;
 	}
-	#follow-section {
-		h3 {
-			margin: 0;
-			margin-top:1em;
-		}
-		.half {
-			width: 100%;
+	#about-section {
+		div {
+			width: 80%;
+			margin: auto;
+			float: none;
+			display: block;
 		}
 	}
 }
