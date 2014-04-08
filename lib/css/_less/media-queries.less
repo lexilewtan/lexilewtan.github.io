@@ -1,7 +1,8 @@
 // larger than phone
 @media only screen and(min-width: 35em) {
 	body {
-		background: @mainBackground url("/lib/img/pattern.png") center center repeat;
+		background: url("../img/bg.png") top center no-repeat fixed;
+		background-size: cover;
 	}
 	h3 {
 		font-family: @ostBold;
@@ -36,23 +37,26 @@
 	}
 	.page-header {
 		.clearfix;
+		background: rgba(35,29,38,1);
 	}
 
 	// SECTIONS
-	.main-section {
-		.fadeIn(background-color);
-		background: -moz-linear-gradient(top,  rgba(35,29,38,0.65) 0%, rgba(0,0,0,0) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,29,38,0.65)), color-stop(100%,rgba(0,0,0,0)));
-		background: -webkit-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%);
-		background: -o-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%);
-		background: -ms-linear-gradient(top,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to bottom,  rgba(35,29,38,0.65) 0%,rgba(0,0,0,0) 100%); 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6222222', endColorstr='#00000000',GradientType=0 );
+	.main-section, .container-overlay {
+		background: rgba(35,29,38,1);
 		padding-bottom: 5em;
+	}
+	.main-section {
+		margin-top: .5em;
+		h2 {
+			.fadeIn(color);
+		}
 		&:hover {
-			//background-color: rgba(35,29,38,.85);
+			background-color: rgba(35,29,38,1);
 			em {
-			//	color: #eee;
+				color: #eee;
+			}
+			h2 {
+				color: #ccc !important;
 			}
 		}
 	}
@@ -230,7 +234,7 @@
 		padding: 1em;
 	}
 	.page-header {
-		background-color: @orchid;
+		background: rgba(35,29,38,1);
 		h1 {
 			padding-top: .125em;
 			margin: 0;

@@ -24,7 +24,7 @@
 
 @hairline: 1px solid #444;
 
-.fadeIn(@type: opacity, @duration: .75s) {
+.fadeIn(@type: opacity, @duration: .5s) {
     -webkit-transition: @type @duration ease-in-out;
     -moz-transition: @type @duration ease-in-out;
     -ms-transition: @type @duration ease-in-out;
@@ -41,11 +41,11 @@
 	text-transform: uppercase;
 	border-radius: 3px;
 	font-family: @sans;
-	-webkit-transition: color .75s, border-color .75s;
-	-moz-transition: color .75s, border-color .75s;
-	-ms-transition: color .75s, border-color .75s;
-	-o-transition: color .75s, border-color .75s;
-	transition: color .75s, border-color .75s;
+	-webkit-transition: color .5s, border-color .5s;
+	-moz-transition: color .5s, border-color .5s;
+	-ms-transition: color .5s, border-color .5s;
+	-o-transition: color .5s, border-color .5s;
+	transition: color .5s, border-color .5s;
 	&:hover {
 		cursor: pointer;
 		border-color: lighten(@color, 20%);
