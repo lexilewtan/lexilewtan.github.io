@@ -1,8 +1,7 @@
 // larger than phone
 @media only screen and(min-width: 35em) {
 	body {
-		background: url("../img/bg.png") top left no-repeat fixed;
-		background-size: cover;
+		background: @mainBackground url("/lib/img/pattern.png") center center repeat;
 	}
 	h3 {
 		font-family: @ostBold;
@@ -51,9 +50,9 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6222222', endColorstr='#00000000',GradientType=0 );
 		padding-bottom: 5em;
 		&:hover {
-			background-color: rgba(35,29,38,.85);
+			//background-color: rgba(35,29,38,.85);
 			em {
-				color: #eee;
+			//	color: #eee;
 			}
 		}
 	}
