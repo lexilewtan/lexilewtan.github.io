@@ -1,1 +1,1 @@
-hi i wrote a thing a thing i wrote [link to thing](#)
+Why I Joined Hired! [read here](http://bit.ly/lexi-hired)

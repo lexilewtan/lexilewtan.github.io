@@ -179,6 +179,10 @@ body {
   border-color: #bf38ff;
   color: #bf38ff;
 }
+.announcements p:before {
+  content: "Update: ";
+  color: #777;
+}
 .main-section {
   border-top: 3px solid #208ba1;
   *zoom: 1;
@@ -246,7 +250,7 @@ body {
   border: none;
   background: none;
   border-bottom: 3px solid #208ba1;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
 }
 #follow-section .input-tiny-type-email:focus {
@@ -267,7 +271,7 @@ body {
   -ms-transition: color 0.75s, border-color 0.75s;
   -o-transition: color 0.75s, border-color 0.75s;
   transition: color 0.75s, border-color 0.75s;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   position: absolute;
   bottom: 0;
 }
@@ -442,6 +446,14 @@ body {
     font-size: 150%;
     display: inline-block;
   }
+  .connect__email a,
+  .connect__hired a {
+    min-width: 15em;
+  }
+  .connect__email a:first-child,
+  .connect__hired a:first-child {
+    margin-right: 1em;
+  }
 }
 @media only screen and (min-width: 70em) {
   .container-outer {
@@ -479,6 +491,11 @@ body {
   em {
     font-size: 2rem;
   }
+  .connect__email a:first-child,
+  .connect__hired a:first-child {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
 }
 @media only screen and (min-width: 50em) and (max-width: 70em) {
   .name {
@@ -508,11 +525,6 @@ body {
   .lexibot {
     width: 100%;
   }
-  .half {
-    width: 100%;
-    display: block;
-    margin-bottom: 1em;
-  }
   #about-section div {
     width: 80%;
     margin: auto;
@@ -538,11 +550,6 @@ body {
     font-size: 1.25rem;
   }
   .announcements {
-    font-size: 75%;
-  }
-  .announcements p:before {
-    content: "Latest: ";
-    color: #aaa;
     font-size: 75%;
   }
   .announcements a {

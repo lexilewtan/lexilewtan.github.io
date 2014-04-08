@@ -28,6 +28,12 @@ body {
 	a {
 		.button(@orchid);
 	}
+    p {
+   		&:before {
+   			content: "Update: ";
+   			color: #777;
+   		}
+	}
 }
 
 .main-section {
@@ -70,7 +76,7 @@ body {
 		border: none;
 		background: none;
 		border-bottom: 3px solid @teal;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		color: white;
 		&:focus {
 			outline: none;
@@ -79,7 +85,7 @@ body {
 	}
 	.tiny-letter-button {
 		.button();
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		position: absolute;
 		bottom: 0;
 	}

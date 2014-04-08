@@ -102,6 +102,14 @@
 			display: inline-block;
 		}
 	}
+	.connect__email, .connect__hired {
+		a {
+			min-width: 15em;
+			&:first-child {
+				margin-right: 1em;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 70em) {
 	// CONTAINERS
@@ -142,6 +150,14 @@
 	em {
 		font-size: 2rem;
 	}
+	.connect__email, .connect__hired {
+		a {
+			&:first-child {
+				margin-right: 0;
+				margin-bottom: 0.5em;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 50em) and (max-width: 70em) {
@@ -175,11 +191,6 @@
 	.lexibot {
 		width: 100%;
 	}
-	.half {
-		width: 100%;
-		display: block;
-		margin-bottom: 1em;
-	}
 	#about-section {
 		div {
 			width: 80%;
@@ -208,13 +219,6 @@
 	}
 	.announcements {
 		font-size: 75%;
-	    p {
-	   		&:before {
-	   			content: "Latest: ";
-	   			color: #aaa;
-	   			font-size: 75%;
-	   		}
-		}
 		a {
 			margin: 0 1em 1em;
 		}
