@@ -9,7 +9,7 @@ If you want to update the site and use the templates and includes, you should [i
 
 Jekyll outputs static HTML, so you can also edit HTML directly.
 
-##The actual output is in _site.
+##The actual output is in _site. On Github, it's in the "Production" branch.
 
 ###_includes
 
