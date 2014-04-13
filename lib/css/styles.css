@@ -13,6 +13,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'OstrichSansBlack';
+  src: url('../fonts/ostrich/ostrichsans-black-webfont.eot');
+  src: url('../fonts/ostrich/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich/ostrichsans-black-webfont.woff') format('woff'), url('../fonts/ostrich/ostrichsans-black-webfont.ttf') format('truetype'), url('../fonts/ostrich/ostrichsans-black-webfont.svg#ostrich_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .half {
   float: left;
   width: 50%;
@@ -67,7 +74,7 @@ h6 {
   font-weight: normal;
   line-height: 1.25;
   margin-bottom: .1em;
-  font-family: "OstrichSansRegular";
+  font-family: "OstrichSansBlack";
   text-transform: uppercase;
 }
 h1 {
@@ -133,7 +140,7 @@ a:hover {
   box-sizing: border-box;
 }
 body {
-  background-color: #222222;
+  background: #231d26;
   color: #aaa;
 }
 .name {
@@ -168,11 +175,11 @@ body {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
-  -webkit-transition: color 0.75s, border-color 0.75s;
-  -moz-transition: color 0.75s, border-color 0.75s;
-  -ms-transition: color 0.75s, border-color 0.75s;
-  -o-transition: color 0.75s, border-color 0.75s;
-  transition: color 0.75s, border-color 0.75s;
+  -webkit-transition: color 0.5s, border-color 0.5s;
+  -moz-transition: color 0.5s, border-color 0.5s;
+  -ms-transition: color 0.5s, border-color 0.5s;
+  -o-transition: color 0.5s, border-color 0.5s;
+  transition: color 0.5s, border-color 0.5s;
 }
 .announcements a:hover {
   cursor: pointer;
@@ -184,8 +191,8 @@ body {
   color: #777;
 }
 .main-section {
-  border-top: 3px solid #208ba1;
   *zoom: 1;
+  margin-top: .5em;
 }
 .main-section:before,
 .main-section:after {
@@ -198,7 +205,7 @@ body {
 }
 .section-header h2 {
   text-align: center;
-  font-family: "OstrichSansRegular";
+  font-family: "OstrichSansBlack";
   text-transform: uppercase;
   color: #888;
 }
@@ -217,11 +224,11 @@ body {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
-  -webkit-transition: color 0.75s, border-color 0.75s;
-  -moz-transition: color 0.75s, border-color 0.75s;
-  -ms-transition: color 0.75s, border-color 0.75s;
-  -o-transition: color 0.75s, border-color 0.75s;
-  transition: color 0.75s, border-color 0.75s;
+  -webkit-transition: color 0.5s, border-color 0.5s;
+  -moz-transition: color 0.5s, border-color 0.5s;
+  -ms-transition: color 0.5s, border-color 0.5s;
+  -o-transition: color 0.5s, border-color 0.5s;
+  transition: color 0.5s, border-color 0.5s;
   font-size: 1.25rem;
 }
 #follow-section a:hover {
@@ -266,11 +273,11 @@ body {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
-  -webkit-transition: color 0.75s, border-color 0.75s;
-  -moz-transition: color 0.75s, border-color 0.75s;
-  -ms-transition: color 0.75s, border-color 0.75s;
-  -o-transition: color 0.75s, border-color 0.75s;
-  transition: color 0.75s, border-color 0.75s;
+  -webkit-transition: color 0.5s, border-color 0.5s;
+  -moz-transition: color 0.5s, border-color 0.5s;
+  -ms-transition: color 0.5s, border-color 0.5s;
+  -o-transition: color 0.5s, border-color 0.5s;
+  transition: color 0.5s, border-color 0.5s;
   font-size: 1.5rem;
   position: absolute;
   bottom: 0;
@@ -295,11 +302,11 @@ body {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
-  -webkit-transition: color 0.75s, border-color 0.75s;
-  -moz-transition: color 0.75s, border-color 0.75s;
-  -ms-transition: color 0.75s, border-color 0.75s;
-  -o-transition: color 0.75s, border-color 0.75s;
-  transition: color 0.75s, border-color 0.75s;
+  -webkit-transition: color 0.5s, border-color 0.5s;
+  -moz-transition: color 0.5s, border-color 0.5s;
+  -ms-transition: color 0.5s, border-color 0.5s;
+  -o-transition: color 0.5s, border-color 0.5s;
+  transition: color 0.5s, border-color 0.5s;
 }
 .connect__email a:hover {
   cursor: pointer;
@@ -315,11 +322,11 @@ body {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
-  -webkit-transition: color 0.75s, border-color 0.75s;
-  -moz-transition: color 0.75s, border-color 0.75s;
-  -ms-transition: color 0.75s, border-color 0.75s;
-  -o-transition: color 0.75s, border-color 0.75s;
-  transition: color 0.75s, border-color 0.75s;
+  -webkit-transition: color 0.5s, border-color 0.5s;
+  -moz-transition: color 0.5s, border-color 0.5s;
+  -ms-transition: color 0.5s, border-color 0.5s;
+  -o-transition: color 0.5s, border-color 0.5s;
+  transition: color 0.5s, border-color 0.5s;
 }
 .connect__hired a:hover {
   cursor: pointer;
@@ -332,7 +339,7 @@ body {
 }
 @media only screen and (min-width: 35em) {
   body {
-    background: url("../img/bg.png") top left no-repeat fixed;
+    background: url("../img/bg.png") top center no-repeat fixed;
     background-size: cover;
   }
   h3 {
@@ -367,6 +374,7 @@ body {
   }
   .page-header {
     *zoom: 1;
+    background: #231d26;
   }
   .page-header:before,
   .page-header:after {
@@ -377,26 +385,29 @@ body {
   .page-header:after {
     clear: both;
   }
-  .main-section {
-    -webkit-transition: background-color 0.75s ease-in-out;
-    -moz-transition: background-color 0.75s ease-in-out;
-    -ms-transition: background-color 0.75s ease-in-out;
-    -o-transition: background-color 0.75s ease-in-out;
-    transition: background-color 0.75s ease-in-out;
-    background: -moz-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 29, 38, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background: -webkit-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    background: -o-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    background: -ms-linear-gradient(top, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(to bottom, rgba(35, 29, 38, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6222222', endColorstr='#00000000', GradientType=0);
+  .main-section,
+  .container-overlay {
+    background: #231d26;
     padding-bottom: 5em;
   }
+  .main-section {
+    margin-top: .5em;
+  }
+  .main-section h2 {
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+  }
   .main-section:hover {
-    background-color: rgba(35, 29, 38, 0.85);
+    background-color: #231d26;
   }
   .main-section:hover em {
     color: #eee;
+  }
+  .main-section:hover h2 {
+    color: #ccc !important;
   }
   .section-header {
     width: 66%;
@@ -407,11 +418,11 @@ body {
     font-size: 2.5em;
   }
   em {
-    -webkit-transition: color 0.75s ease-in-out;
-    -moz-transition: color 0.75s ease-in-out;
-    -ms-transition: color 0.75s ease-in-out;
-    -o-transition: color 0.75s ease-in-out;
-    transition: color 0.75s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
     padding: .25rem 0 0;
   }
   .lexibot {
@@ -564,7 +575,7 @@ body {
     padding: 1em;
   }
   .page-header {
-    background-color: #8e00d1;
+    background: #231d26;
   }
   .page-header h1 {
     padding-top: .125em;
