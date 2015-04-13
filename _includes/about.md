@@ -1,3 +1,3 @@
-*Hey, I'm Lexi.* I used to work at [betaworks](http://betaworks.com/), and before that I worked on [Techstars](http://www.techstars.com/), [Contently](https://contently.com/), [Lore](http://lore.com/), [Savored](http://savored.com/) and [NYLON](http://nylonmag.com/). I also am an alumni of [Tech@NYU](http://techatnyu.org/), and I've been connecting people and ideas for as long as I can remember. 
+*Hey, I'm Lexi.* I currently launch new markets for [Hired](https://hired.com/). I used to work for [betaworks](http://betaworks.com/), and before that I worked at [Techstars](http://www.techstars.com/), [Contently](https://contently.com/), [Lore](http://lore.com/), [Savored](http://savored.com/) and [NYLON](http://nylonmag.com/). I also am an alumni of [Tech@NYU](http://techatnyu.org/).
 
-Right now, I'm working on [Hired](https://hired.com/), the easiest, most transparent marketplace for hiring top tech talent. If you are an engineer, designer or product manager looking for a job, you should check it out&mdash;and if you're an employer looking to hire, you should get in touch. 
+Say hi!

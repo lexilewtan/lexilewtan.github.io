@@ -57,12 +57,12 @@ body {
   color: #ccc;
 }
 ::selection {
-  background: #208ba1;
+  background: #f7f7f7;
   color: white;
   /* Safari */
 }
 ::-moz-selection {
-  background: #208ba1;
+  background: #f7f7f7;
   /* Firefox */
 }
 h1,
@@ -118,18 +118,18 @@ a {
 a:link,
 a:visited,
 a:active {
-  color: #8e00d1;
+  color: #f7f7f7;
 }
 a:hover {
-  color: #bf38ff;
+  color: #787878;
 }
 .main-section em {
   line-height: 1;
   font-family: "OstrichSansRegular";
   font-weight: 200;
   font-style: normal;
-  background: #370051;
-  color: #208ba1;
+  background: #f7f7f7;
+  color: #242226;
   text-align: center;
 }
 * {
@@ -162,16 +162,16 @@ body {
 .announcements {
   width: 100%;
   background: #222222 url("/lib/img/pattern.png") center center repeat;
-  border-bottom: 3px solid #208ba1;
+  border-bottom: 3px solid #f7f7f7;
   text-align: center;
   color: white;
 }
 .announcements a {
-  color: #8e00d1;
+  color: #f7f7f7;
   text-decoration: none;
   background: none;
   padding: .05em .20em .025em;
-  border: 3px solid #8e00d1;
+  border: 3px solid #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
@@ -183,8 +183,8 @@ body {
 }
 .announcements a:hover {
   cursor: pointer;
-  border-color: #bf38ff;
-  color: #bf38ff;
+  border-color: #787878;
+  color: #787878;
 }
 .announcements p:before {
   content: "Update: ";
@@ -216,11 +216,11 @@ body {
   width: 100%;
 }
 #follow-section a {
-  color: #8e00d1;
+  color: #f7f7f7;
   text-decoration: none;
   background: none;
   padding: .05em .20em .025em;
-  border: 3px solid #8e00d1;
+  border: 3px solid #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
@@ -233,8 +233,8 @@ body {
 }
 #follow-section a:hover {
   cursor: pointer;
-  border-color: #bf38ff;
-  color: #bf38ff;
+  border-color: #787878;
+  color: #787878;
 }
 #follow-section .tiny-letter fieldset {
   *zoom: 1;
@@ -256,20 +256,20 @@ body {
   float: left;
   border: none;
   background: none;
-  border-bottom: 3px solid #208ba1;
+  border-bottom: 3px solid #f7f7f7;
   font-size: 1.5rem;
   color: white;
 }
 #follow-section .input-tiny-type-email:focus {
   outline: none;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #787878;
 }
 #follow-section .tiny-letter-button {
-  color: #208ba1;
+  color: #f7f7f7;
   text-decoration: none;
   background: none;
   padding: .05em .20em .025em;
-  border: 3px solid #208ba1;
+  border: 3px solid #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
@@ -284,8 +284,8 @@ body {
 }
 #follow-section .tiny-letter-button:hover {
   cursor: pointer;
-  border-color: #4cc3db;
-  color: #4cc3db;
+  border-color: #787878;
+  color: #787878;
 }
 #follow-section .label {
   font: 75% "Signika Negative", helvetica, sans-serif;
@@ -294,11 +294,11 @@ body {
   display: inline;
 }
 .connect__email a {
-  color: #8e00d1;
+  color: #f7f7f7;
   text-decoration: none;
   background: none;
   padding: .05em .20em .025em;
-  border: 3px solid #8e00d1;
+  border: 3px solid #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
@@ -310,15 +310,15 @@ body {
 }
 .connect__email a:hover {
   cursor: pointer;
-  border-color: #bf38ff;
-  color: #bf38ff;
+  border-color: #787878;
+  color: #787878;
 }
 .connect__hired a {
-  color: #208ba1;
+  color: #f7f7f7;
   text-decoration: none;
   background: none;
   padding: .05em .20em .025em;
-  border: 3px solid #208ba1;
+  border: 3px solid #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Signika Negative", helvetica, sans-serif;
@@ -330,8 +330,8 @@ body {
 }
 .connect__hired a:hover {
   cursor: pointer;
-  border-color: #4cc3db;
-  color: #4cc3db;
+  border-color: #787878;
+  color: #787878;
 }
 #ss-section {
   padding-bottom: 0;
@@ -399,15 +399,6 @@ body {
     -ms-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
-  }
-  .main-section:hover {
-    background-color: #231d26;
-  }
-  .main-section:hover em {
-    color: #eee;
-  }
-  .main-section:hover h2 {
-    color: #ccc !important;
   }
   .section-header {
     width: 66%;

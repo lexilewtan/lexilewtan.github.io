@@ -15,12 +15,10 @@
 @grayMed: #666;
 @grayMedDark: #444;
 
+@grayAccent: #f7f7f7;
+
 @mainBackground: #222; 
 
-@teal: #208BA1;
-
-@orchid: lighten(@purple, 25%);
-@purple: #370051;
 
 @hairline: 1px solid #444;
 
@@ -32,7 +30,7 @@
     transition: @type @duration ease-in-out;
 }
 
-.button(@color: @teal) {
+.button(@color: @grayAccent) {
 	color: @color;
 	text-decoration: none;
 	background: none;
@@ -48,8 +46,8 @@
 	transition: color .5s, border-color .5s;
 	&:hover {
 		cursor: pointer;
-		border-color: lighten(@color, 20%);
-		color: lighten(@color, 20%);
+		border-color: darken(@color, 50%);
+		color: darken(@color, 50%);
 	}
 }
 

@@ -5,12 +5,12 @@ body {
 	color: #ccc;
 }
 ::selection {
-  background: @teal;
+  background: @grayAccent;
   color: white;
   /* Safari */
 }
 ::-moz-selection {
-  background: @teal;
+  background: @grayAccent;
   /* Firefox */
 }
 h1, h2, h3, h4, h5, h6 {
@@ -58,17 +58,17 @@ a {
 	.fadeIn(color, .5s);
 }
 a:link, a:visited, a:active {
-	color: @orchid;
+	color: @grayAccent;
 }
 a:hover {
-	color: lighten(@orchid, 20%);
+	color: darken(@grayAccent, 50%);
 }
 .main-section em {
 	line-height: 1;
 	font-family: @ostRegular;
 	font-weight: 200;
 	font-style: normal;
-	background: @purple;
-	color: @teal;
+	background: @grayAccent;
+	color: @darkGrey;
 	text-align: center;
 }

@@ -22,11 +22,11 @@ body {
 .announcements {
 	width: 100%;
 	background: @mainBackground url("/lib/img/pattern.png") center center repeat;
-	border-bottom: 3px solid @teal;
+	border-bottom: 3px solid @grayAccent;
 	text-align: center;
 	color: white;
 	a {
-		.button(@orchid);
+		.button(@grayAccent);
 	}
     p {
    		&:before {
@@ -58,7 +58,7 @@ body {
 }
 #follow-section {
 	a {
-		.button(@orchid);
+		.button(@grayAccent);
 		font-size: 1.25rem;
 	}
 	.tiny-letter {
@@ -75,12 +75,12 @@ body {
 		float: left;
 		border: none;
 		background: none;
-		border-bottom: 3px solid @teal;
+		border-bottom: 3px solid @grayAccent;
 		font-size: 1.5rem;
 		color: white;
 		&:focus {
 			outline: none;
-			border-bottom: 3px solid #ccc;
+			border-bottom: 3px solid darken(@grayAccent, 50%);
 		}
 	}
 	.tiny-letter-button {
@@ -99,7 +99,7 @@ body {
 
 .connect__email {
 	a {
-		.button(@orchid);
+		.button(@grayAccent);
 	}
 }
 .connect__hired {
