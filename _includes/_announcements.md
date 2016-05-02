@@ -1,1 +1,1 @@
-Why I Joined Hired! [read here](http://bit.ly/lexi-hired)
+Check out A-List! alist.co
