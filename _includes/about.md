@@ -1,3 +1,3 @@
-*Hey, I'm Lexi.* I used to work at [Hired](https://hired.com/), and before that I worked on [betaworks](https://betaworks.com/), [Techstars](http://www.techstars.com/), [Contently](https://contently.com/), [Lore](http://lore.com/), [Savored](http://savored.com/) and [NYLON](http://nylonmag.com/). I also am an alumni of [Tech@NYU](http://techatnyu.org/), and I've been connecting people and ideas for as long as I can remember. 
+*Hey, I'm Lexi.* I work at [AngelList](http://angel.co). 
 
-Right now, I'm working on [A-List](https://alist.co) by [AngelList](https://angel.co), the easiest, most transparent marketplace for hiring top tech talent. If you are an engineer, designer or product manager looking for a job, you should check it out&mdash;and if you're an employer looking to hire, you should get in touch. 
+Was: [Hired](https://hired.com/),[betaworks](https://betaworks.com/), [Techstars](http://www.techstars.com/), [Contently](https://contently.com/), [Lore](http://lore.com/), [Savored](http://savored.com/) and [NYLON](http://nylonmag.com/) & [Tech@NYU](http://techatnyu.org/).
