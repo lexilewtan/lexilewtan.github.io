@@ -1,0 +1,1 @@
+Why I Joined Hired! [read here](http://bit.ly/lexi-hired)
