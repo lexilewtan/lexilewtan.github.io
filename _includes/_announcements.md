@@ -1,1 +1,1 @@
-Check out A-List! alist.co
+Check out A-List! http://alist.co
